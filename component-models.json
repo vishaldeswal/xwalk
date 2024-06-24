@@ -202,7 +202,13 @@
          "name": "author",
          "label": "Author",
          "value": ""
-       }
+       },
+       {
+        "component": "reference",
+        "label": "Image Reference",
+        "name": "reference",
+        "valueType": "string"
+      }
      ]
   }
   
