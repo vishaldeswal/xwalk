@@ -190,7 +190,7 @@
     "id": "quote",
     "fields": [
        {
-         "component": "text-area",
+         "component": "text",
          "name": "quote",
          "value": "",
          "label": "Quote",
