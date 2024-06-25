@@ -338,7 +338,7 @@
       {
         "component": "text",
         "label": "Card1 Background Image Alt",
-        "name": "card1_bckAlt",
+        "name": "card1_bckImgAlt",
         "valueType": "string"
       },
 
@@ -415,7 +415,7 @@
       {
         "component": "text",
         "label": "Card2 Background Image Alt",
-        "name": "card2_bckAlt",
+        "name": "card2_bckImgAlt",
         "valueType": "string"
       },
       {
