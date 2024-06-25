@@ -289,8 +289,7 @@
         "label": "Container",
         "name": "container",
         "valueType": "string",
-        "collapsible": true,
-        "multi":true,
+        "collapsible": false,
         "fields": [
           {
             "component": "text-input",
