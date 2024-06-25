@@ -262,25 +262,291 @@
 
       {
         "component": "tab",
-        "label": "Primary Cards",
-        "name": "primaryCards"
+        "label": "Primary Offers",
+        "name": "primaryOffers"
       },
       {
         "component": "text-input",
-        "label": "Text 1",
-        "name": "text1",
+        "valueType": "string",
+        "name": "card1_title",
+        "label": "Card 1 Title"
+      },
+      {
+        "component": "select",
+        "name": "card1_titleType",
+        "value": "h2",
+        "label": "Card1 Title Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "card1_description",
+        "value": "",
+        "label": "Card1 Description",
+        "valueType": "string"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card1_link",
+        "value": "#",
+        "label": "Card1 CTA Link"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card1_linkText",
+        "value": "Button",
+        "label": "Card1 CTA Text"
+      },
+
+      {
+        "component": "reference",
+        "label": "Card1 Background Image",
+        "name": "card1_bckImg",
+        "valueType": "string"
+      },
+
+      {
+        "component": "text",
+        "label": "Card1 Background Image Alt",
+        "name": "card1_bckAlt",
+        "valueType": "string"
+      },
+
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "card2_title",
+        "label": "Card 2 Title"
+      },
+      {
+        "component": "select",
+        "name": "card2_titleType",
+        "value": "h2",
+        "label": "Card2 Title Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "card2_description",
+        "value": "",
+        "label": "Card2 Description",
+        "valueType": "string"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card2_link",
+        "value": "#",
+        "label": "Card2 CTA Link"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card2_linkText",
+        "value": "Button",
+        "label": "Card2 CTA Text"
+      },
+
+      {
+        "component": "reference",
+        "label": "Card2 Background Image",
+        "name": "card2_bckImg",
+        "valueType": "string"
+      },
+
+      {
+        "component": "text",
+        "label": "Card2 Background Image Alt",
+        "name": "card2_bckAlt",
         "valueType": "string"
       },
       {
         "component": "tab",
-        "label": "Secondary Cards",
-        "name": "secondaryCards"
+        "label": "Secondary Offers",
+        "name": "secondaryOffers"
       },
       {
         "component": "text-input",
-        "label": "Text 2",
-        "name": "text2",
+        "valueType": "string",
+        "name": "card3_title",
+        "label": "Card 3 Title"
+      },
+      {
+        "component": "select",
+        "name": "card3_titleType",
+        "value": "h2",
+        "label": "Card3 Title Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "card3_description",
+        "value": "",
+        "label": "Card3 Description",
         "valueType": "string"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card3_link",
+        "value": "#",
+        "label": "Card3 CTA Link"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card3_linkText",
+        "value": "Button",
+        "label": "Card3 CTA Text"
+      },
+
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "card4_title",
+        "label": "Card4 Title"
+      },
+      {
+        "component": "select",
+        "name": "card4_titleType",
+        "value": "h2",
+        "label": "Card4 Title Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "richtext",
+        "name": "card4_description",
+        "value": "",
+        "label": "Card4 Description",
+        "valueType": "string"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card4_link",
+        "value": "#",
+        "label": "Card4 CTA Link"
+      },
+      
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "card4_linkText",
+        "value": "Button",
+        "label": "Card4 CTA Text"
       }
     ]
   }

@@ -152,8 +152,22 @@
                   "link":"#",
                   "linkText":"Button",
                   "linkTitle": "Button",
-                  "text1":"Primary Card",
-                  "text2": "Secondary Card"
+                  
+                  "card1_title":"Card1 Title",
+                  "card1_titleType": "h3",
+                  "card1_description":" Lorem  Impsum",
+                  "card1_link":"#",
+                  "card1_linkText":"Card1 Text",
+                  "card1_bckImg":"",
+                  "card1_bckAlt":"Card1 Image Alternative",
+
+                  "card2_title":"Card2 Title",
+                  "card2_titleType": "h3",
+                  "card2_description":" Lorem  Impsum",
+                  "card2_link":"#",
+                  "card2_linkText":"Card2 Text",
+                  "card2_bckImg":"",
+                  "card2_bckAlt":"Card2 Image Alternative"
                 }
               }
             }
