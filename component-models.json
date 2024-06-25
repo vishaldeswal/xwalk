@@ -295,13 +295,15 @@
             "component": "text-input",
             "label": "Simple Text 1",
             "name": "text",
-            "valueType": "string"
+            "valueType": "string",
+            "value": "Sample text 1"
           },
           {
             "component": "text-input",
             "label": "Simple Text 2",
             "name": "text2",
-            "valueType": "string"
+            "valueType": "string",
+            "value": "Sample text 2"
           }
         ]
       }
