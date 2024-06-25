@@ -199,12 +199,12 @@
                   "text": "<p>Our community of partners is ...</p>",
                   "item_0": {
                     "model": "image",
-                    "fileReference": "/content/dam/partners/foo.png",
+                    "fileReference": "/content/dam/vishal_eds/widen-the-talent-pool.png",
                     "alt": "Icon of Foo"
                   },
                   "item_1": {
                     "model": "image",
-                    "fileReference": "/content/dam/partners/bar.png",
+                    "fileReference": "/content/dam/vishal_eds/widen-the-talent-pool.png",
                     "alt": "Icon of Bar"
                   }
                 }
