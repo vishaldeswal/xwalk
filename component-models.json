@@ -549,5 +549,18 @@
         "label": "Card4 CTA Text"
       }
     ]
+  },
+
+  {
+    "id": "testBlock",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
   }
 ]
