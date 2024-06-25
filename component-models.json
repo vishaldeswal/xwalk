@@ -262,17 +262,11 @@
         "label": "Description",
         "valueType": "string"
       },
+      
       {
         "component": "text",
         "valueType": "string",
-        "name": "ctaText",
-        "value": "Button",
-        "label": "CTA Text"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "ctaLink",
+        "name": "link",
         "value": "#",
         "label": "CTA Link"
       },
@@ -280,9 +274,20 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "ctaTitle",
+        "name": "linkText",
+        "value": "Button",
+        "label": "CTA Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "linkTitle",
         "value": "",
         "label": "CTA Title"
+      },
+
+      {
+        
       }
     ]
   }
