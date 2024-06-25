@@ -186,32 +186,6 @@
       }
     ]
   },
-  {
-    "id": "quote",
-    "fields": [
-    {
-      "component": "container",
-      "label": "Container",
-      "name": "container",
-      "valueType": "string",
-      "collapsible": true,
-      "fields": [
-        {
-          "component": "text-input",
-          "label": "Simple Text 1",
-          "name": "text",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "label": "Simple Text 2",
-          "name": "text2",
-          "valueType": "string"
-        }
-      ]
-    }
-  ]
-  },
 
   {
     "id": "offers",
@@ -287,7 +261,26 @@
       },
 
       {
-        
+        "component": "tab",
+        "label": "Primary Cards",
+        "name": "primaryCards"
+      },
+      {
+        "component": "text-input",
+        "label": "Text 1",
+        "name": "text1",
+        "valueType": "string"
+      },
+      {
+        "component": "tab",
+        "label": "Secondary Cards",
+        "name": "secondaryCards"
+      },
+      {
+        "component": "text-input",
+        "label": "Text 2",
+        "name": "text2",
+        "valueType": "string"
       }
     ]
   }
