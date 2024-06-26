@@ -29,7 +29,6 @@ export default function decorate(block) {
     if (ctaElement) {
         const ctaClone = ctaElement.cloneNode(true);
         ctaClone.classList.add('btn--link', 'btn--link-primary'); // Add your CSS classes
-        //ctaClone.setAttribute('href', ctaElement.getAttribute('href')); // Ensure href attribute is preserved
         actionDiv.appendChild(ctaClone);
     }
 
