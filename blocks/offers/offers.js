@@ -1,8 +1,12 @@
 // Utility function to create elements with class
-function createElementWithClass(tagName, className) {
+function createElementWithClass(tagName, classNames) {
     const element = document.createElement(tagName);
-    if (className) {
-      element.classList.add(className);
+    if (classNames) {
+        var classNamesArray = classNames.split(' ');
+        classNamesArray.forEach(function(className) {
+            element.classList.add(className); 
+        });  
+      
     }
     return element;
   }
