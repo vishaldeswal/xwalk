@@ -42,7 +42,7 @@
   {
     "id": "offers",
     "components": [
-      "offer"
+      "offer-component"
     ]
   }
 ]
