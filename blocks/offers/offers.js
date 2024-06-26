@@ -8,6 +8,9 @@ export default function decorate(block) {
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('immersive__content');
 
+    const actionDiv = document.createElement('div');
+    actionDiv.classList.add('immersive__action-btn');
+
     // Append title and description directly from block.children[0]
     const titleElement = block.children[0].querySelector('[data-aue-prop="component_title"]');
     if (titleElement) {
@@ -27,10 +30,11 @@ export default function decorate(block) {
         const ctaClone = ctaElement.cloneNode(true);
         ctaClone.classList.add('btn--link', 'btn--link-primary'); // Add your CSS classes
         ctaClone.setAttribute('href', ctaElement.getAttribute('href')); // Ensure href attribute is preserved
-        wrapper.appendChild(ctaClone);
+        actionDiv.appendChild(ctaClone);
     }
 
     wrapper.appendChild(contentDiv);
+    wrapper.appendChild(actionDiv);
     section.appendChild(wrapper);
 
     // Append the generated HTML structure to the block
