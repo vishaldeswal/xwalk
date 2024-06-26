@@ -193,12 +193,12 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "title",
+        "name": "component_title",
         "label": "Title"
       },
       {
         "component": "select",
-        "name": "titleType",
+        "name": "component_titleType",
         "value": "h2",
         "label": "Type",
         "valueType": "string",
@@ -231,7 +231,7 @@
       },
       {
         "component": "richtext",
-        "name": "description",
+        "name": "component_description",
         "value": "",
         "label": "Description",
         "valueType": "string"
@@ -240,7 +240,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "link",
+        "name": "component_link",
         "value": "#",
         "label": "CTA Link"
       },
@@ -248,14 +248,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "linkText",
+        "name": "component_linkText",
         "value": "Button",
         "label": "CTA Text"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "linkTitle",
+        "name": "component_linkTitle",
         "value": "",
         "label": "CTA Title"
       }
@@ -267,12 +267,12 @@
       {
         "component": "text-input",
         "valueType": "string",
-        "name": "offerTitle",
+        "name": "offer_Title",
         "label": "Offer Title"
       },
       {
         "component": "select",
-        "name": "offerTitleType",
+        "name": "offer_TitleType",
         "value": "h2",
         "label": "Offer Title Type",
         "valueType": "string",
@@ -305,7 +305,7 @@
       },
       {
         "component": "richtext",
-        "name": "offerDescription",
+        "name": "offer_Description",
         "value": "",
         "label": "Offer Description",
         "valueType": "string"
@@ -314,7 +314,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "offerlink",
+        "name": "offer_link",
         "value": "#",
         "label": "Offer CTA Link"
       },
@@ -322,7 +322,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "offerlinkText",
+        "name": "offer_linkText",
         "value": "View Offer",
         "label": "Offer CTA Text"
       },
@@ -330,14 +330,14 @@
       {
         "component": "reference",
         "label": "Offer Background Image",
-        "name": "offerBckImg",
+        "name": "offer_BckImg",
         "valueType": "string"
       },
 
       {
         "component": "text",
         "label": "Offer Background Image Alt",
-        "name": "offerBckImgAlt",
+        "name": "offer_BckImgAlt",
         "valueType": "string"
       }
     ]
