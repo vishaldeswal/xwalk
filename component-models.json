@@ -314,7 +314,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "offerLink",
+        "name": "offerlink",
         "value": "#",
         "label": "Offer CTA Link"
       },
@@ -322,7 +322,7 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "offerLinkText",
+        "name": "offerlinkText",
         "value": "View Offer",
         "label": "Offer CTA Text"
       },

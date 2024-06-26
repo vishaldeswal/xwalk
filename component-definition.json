@@ -146,6 +146,7 @@
                 "template": {
                   "name" :"Offers",
                   "filter":"offers",
+                  
                   "model": "offers",
                   "title": "Exciting Offers",
                   "titleType": "h2",
