@@ -10,20 +10,20 @@ export default function decorate(block) {
         // Extract title
         const titleElement = component.querySelector('[data-aue-prop="component_title"]');
         if (titleElement) {
-            data.title = titleElement.textContent.trim();
+            data.title = titleElement;
         }
 
         // Extract description
         const descriptionElement = component.querySelector('[data-aue-prop="component_description"]');
         if (descriptionElement) {
-            data.description = descriptionElement.textContent.trim();
+            data.description = descriptionElement;
         }
 
         // Extract CTA text and link URL
         const ctaElement = component.querySelector('[data-aue-prop="component_linkText"]');
         if (ctaElement) {
-            data.ctaText = ctaElement.textContent.trim();
-            data.ctaUrl = ctaElement.href; // Assuming you want the href attribute of the link
+            data.ctaText = ctaElement;
+            data.ctaUrl = ctaElement; // Assuming you want the href attribute of the link
         }
 
         return data;
