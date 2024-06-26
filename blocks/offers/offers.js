@@ -1,8 +1,9 @@
 export default function decorate(block) {
     
+    [component, card1, card2] = block.children;
 
-    console.log("Block of testBlock:\n", block);
-
-    console.log("\nBlock Children: \n", block.children);
+    console.log("\nComponent div: ", component);
+    console.log("\nCard1 div: ", card1);
+    console.log("\nCard2 div: ", card2);
 
   }
