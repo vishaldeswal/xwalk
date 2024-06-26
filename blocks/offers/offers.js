@@ -28,6 +28,7 @@ export default function decorate(block) {
     const ctaElement = block.children[0].querySelector('[data-aue-prop="component_linkText"]');
     if (ctaElement) {
         const ctaClone = ctaElement.cloneNode(true);
+        ctaClone.classList.remove('button');
         ctaClone.classList.add('btn--link', 'btn--link-primary'); // Add your CSS classes
         actionDiv.appendChild(ctaClone);
     }
