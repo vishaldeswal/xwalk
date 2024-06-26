@@ -41,7 +41,6 @@ export default function decorate(block) {
     img.src = "/content/dam/vishal_eds/north_east.svg"; // Replace with your SVG image path
     span.appendChild(img);
     ctaClone.appendChild(span);
-    ctaClone.classList.remove("button");
     ctaClone.classList.add("btn--link", "btn--link-primary"); // Add your CSS classes
     actionDiv.appendChild(ctaClone);
   }
