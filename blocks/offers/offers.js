@@ -98,11 +98,16 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     img1.setAttribute('src', '/content/dam/vishal_eds/mobile-image.png');
     img1.setAttribute('alt', 'mobile img');
     const content1 = createElementWithClass('div', 'right-container__content');
+
     const innerContent1 = createElementWithClass('div', 'immersive__content');
     const strong = document.createElement('strong');
     strong.textContent = 'Lorem Ipsum';
+    innerContent1.appendChild(strong);
+    
     const p1 = document.createElement('p');
     p1.textContent = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.';
+    innerContent1.appendChild(p1);
+    
     const action1 = createElementWithClass('div', 'immersive__action');
     const a1 = document.createElement('a');
     a1.setAttribute('href', '#');
@@ -112,9 +117,8 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     a1.textContent = 'Get Exchange';
 
     action1.appendChild(a1);
-    innerContent1.appendChild(strong);
-    innerContent1.appendChild(p1);
     innerContent1.appendChild(action1);
+
     content1.appendChild(innerContent1);
     rightCard1.appendChild(img1);
     rightCard1.appendChild(content1);
