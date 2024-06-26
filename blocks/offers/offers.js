@@ -1,6 +1,4 @@
 export default function decorate(block) {
-
-    // Assuming `block` is a container element where we can append our generated HTML
     const section = document.createElement('section');
     section.classList.add('deals-offers-container');
 
@@ -10,33 +8,29 @@ export default function decorate(block) {
     const contentDiv = document.createElement('div');
     contentDiv.classList.add('immersive__content');
 
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Exciting offers and deals for you!';
-    contentDiv.appendChild(h2);
+    // Append title and description directly from block.children[0]
+    const titleElement = block.children[0].querySelector('[data-aue-prop="component_title"]');
+    if (titleElement) {
+        //titleElement.classList.add('title-style'); // Add your CSS class
+        contentDiv.appendChild(titleElement.cloneNode(true));
+    }
 
-    const p = document.createElement('p');
-    p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.';
-    contentDiv.appendChild(p);
+    const descriptionElement = block.children[0].querySelector('[data-aue-prop="component_description"]');
+    if (descriptionElement) {
+        //descriptionElement.classList.add('description-style'); // Add your CSS class
+        contentDiv.appendChild(descriptionElement.cloneNode(true));
+    }
 
-    const actionDiv = document.createElement('div');
-    actionDiv.classList.add('immersive__action-btn');
-
-    const a = document.createElement('a');
-    a.classList.add('btn--link', 'btn--link-primary');
-    a.href = '#';
-    a.textContent = 'View More';
-
-    const span = document.createElement('span');
-    const img = document.createElement('img');
-    img.src = '/content/dam/vishal_eds/north_east.svg';
-    span.appendChild(img);
-    a.appendChild(span);
-
-    actionDiv.appendChild(a);
+    // Append CTA directly from block.children[0]
+    const ctaElement = block.children[0].querySelector('[data-aue-prop="component_linkText"]');
+    if (ctaElement) {
+        const ctaClone = ctaElement.cloneNode(true);
+        ctaClone.classList.add('btn--link', 'btn--link-primary'); // Add your CSS classes
+        ctaClone.setAttribute('href', ctaElement.getAttribute('href')); // Ensure href attribute is preserved
+        wrapper.appendChild(ctaClone);
+    }
 
     wrapper.appendChild(contentDiv);
-    wrapper.appendChild(actionDiv);
-
     section.appendChild(wrapper);
 
     // Append the generated HTML structure to the block
