@@ -27,9 +27,10 @@ function createElementWithClass(tagName, classNames) {
     return ctaLink;
   }
   
-  // Function to create teaser card with title, description, and action
-  function createTeaserCard(title, description, actionText, actionUrl) {
-    const teaserCard = createElementWithClass('div', 'teaser__card');
+// Function to create teaser card with title, description, and action
+function createTeaserCard(title, description, actionText, actionUrl, teaserClass) {
+    const teaserContainer = createElementWithClass('div', 'light-teaser buyers-guide-teaser');
+    const teaserCard = createElementWithClass('div', `teaser__card ${teaserClass}`);
     const teaserContent = createElementWithClass('div', 'teaser__content');
     const teaserInfo = createElementWithClass('div', 'teaser__info');
     const teaserTitle = createElementWithClass('div', 'teaser__title');
@@ -55,9 +56,12 @@ function createElementWithClass(tagName, classNames) {
     teaserContent.appendChild(teaserInfo);
     teaserContent.appendChild(teaserActions);
     teaserCard.appendChild(teaserContent);
+    teaserContainer.appendChild(teaserCard);
   
-    return teaserCard;
+    return teaserContainer;
   }
+  
+  
   
   // Function to build the HTML structure
   function buildStructure(block) {
@@ -116,12 +120,12 @@ function createElementWithClass(tagName, classNames) {
   
     // Right container card 2
     const rightCard2 = createElementWithClass('div', 'right-container__card-2');
-    const teaserCard2 = createTeaserCard('Lorem Ipsum', 'Lorem ipsum dolor sit amet lorem ipsum dolor.', 'Know More', 'https://google.com');
+    const teaserCard2 = createTeaserCard('Lorem Ipsum', 'Lorem ipsum dolor sit amet lorem ipsum dolor.', 'Know More', 'https://google.com', 'teaser-light');
     rightCard2.appendChild(teaserCard2);
   
     // Right container card 3
     const rightCard3 = createElementWithClass('div', 'right-container__card-3');
-    const teaserCard3 = createTeaserCard('Lorem Ipsum', 'Lorem ipsum dolor sit amet lorem ipsum dolor.', 'Know More', 'https://google.com');
+    const teaserCard3 = createTeaserCard('Lorem Ipsum', 'Lorem ipsum dolor sit amet lorem ipsum dolor.', 'Know More', 'https://google.com', 'teaser-dark');
     rightCard3.appendChild(teaserCard3);
   
     rightSubContainer.appendChild(rightCard2);
