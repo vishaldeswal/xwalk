@@ -1,6 +1,7 @@
 export default function decorate(block) {
     
-    [component, card1, card2] = block.children;
+
+    const [component, card1, card2] = block.children;
 
     console.log("\nComponent div: ", component);
     console.log("\nCard1 div: ", card1);
