@@ -122,8 +122,7 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     content1.appendChild(innerContent1);
     rightCard1.appendChild(img1);
     rightCard1.appendChild(content1);
-    rightCard1.appendChild(action1);
-  
+    
     // Right container sub-container
     const rightSubContainer = createElementWithClass('div', 'right-container-subcontainer');
   
