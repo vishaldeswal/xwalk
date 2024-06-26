@@ -1,35 +1,47 @@
 export default function decorate(block) {
-    
 
-    const [component, card1, card2, card3, card4] = block.children;
+    // Assuming `block` is a container element where we can append our generated HTML
+    const section = document.createElement('section');
+    section.classList.add('deals-offers-container');
 
-    function getComponentData(component) {
-        // Initialize an object to store extracted data
-        const data = {};
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('immersive__wrapper-light');
 
-        // Extract title
-        const titleElement = component.querySelector('[data-aue-prop="component_title"]');
-        if (titleElement) {
-            data.title = titleElement;
-        }
+    const contentDiv = document.createElement('div');
+    contentDiv.classList.add('immersive__content');
 
-        // Extract description
-        const descriptionElement = component.querySelector('[data-aue-prop="component_description"]');
-        if (descriptionElement) {
-            data.description = descriptionElement;
-        }
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Exciting offers and deals for you!';
+    contentDiv.appendChild(h2);
 
-        // Extract CTA text and link URL
-        const ctaElement = component.querySelector('[data-aue-prop="component_linkText"]');
-        if (ctaElement) {
-            data.ctaText = ctaElement;
-            data.ctaUrl = ctaElement; // Assuming you want the href attribute of the link
-        }
+    const p = document.createElement('p');
+    p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.';
+    contentDiv.appendChild(p);
 
-        return data;
-    }
+    const actionDiv = document.createElement('div');
+    actionDiv.classList.add('immersive__action-btn');
 
-    const componentData = getComponentData(component);
-    console.log('Component Data:', componentData);
+    const a = document.createElement('a');
+    a.classList.add('btn--link', 'btn--link-primary');
+    a.href = '#';
+    a.textContent = 'View More';
 
-  }
+    const span = document.createElement('span');
+    const img = document.createElement('img');
+    img.src = '/content/dam/vishal_eds/north_east.svg';
+    span.appendChild(img);
+    a.appendChild(span);
+
+    actionDiv.appendChild(a);
+
+    wrapper.appendChild(contentDiv);
+    wrapper.appendChild(actionDiv);
+
+    section.appendChild(wrapper);
+
+    // Append the generated HTML structure to the block
+    block.appendChild(section);
+
+    // Return or log if needed
+    console.log('Generated HTML Structure:', section.outerHTML);
+}
