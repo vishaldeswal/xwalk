@@ -179,11 +179,14 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     //a1.setAttribute('target', '_self');
     //a1.textContent = 'Get Exchange';
 
-    action1.appendChild(a1.cloneNode(true));
+    if(a1) action1.appendChild(a1.cloneNode(true));
     innerContent1.appendChild(action1);
 
     content1.appendChild(innerContent1);
-    rightCard1.appendChild(img1.cloneNode(true));
+    if(img1){
+      rightCard1.appendChild(img1.cloneNode(true));
+    }
+   
     rightCard1.appendChild(content1);
     
     // Right container sub-container
