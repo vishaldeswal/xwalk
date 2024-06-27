@@ -42,11 +42,11 @@ function createTeaserCard(cardBlock, teaserClass) {
     //const h3 = document.createElement('h3');
    // h3.textContent = title || '';
 
-  
-   const teaserDescription = createElementWithClass('div', 'teaser__description');
    const description = extractElementFromBlock(cardBlock, '[data-aue-prop="offer_Description"]');
-   if(description) teaserDescription.appendChild(description);
+  
 
+    const teaserDescription = createElementWithClass('div', 'teaser__description');
+    if(description) teaserDescription.appendChild(description);
    // teaserDescription.innerHTML = `<p>${description || ''}</p>`;
   
     const teaserActions = createElementWithClass('div', 'teaser__actions');
@@ -60,6 +60,7 @@ function createTeaserCard(cardBlock, teaserClass) {
 
     if(h) teaserTitle.appendChild(h);
     teaserInfo.appendChild(teaserTitle);
+   
     if(a1) teaserActions.appendChild(a1);
     teaserInfo.appendChild(teaserDescription)
     teaserContent.appendChild(teaserInfo);
