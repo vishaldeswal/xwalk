@@ -102,11 +102,10 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
 
     const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
     console.log("Title: ", titleElement);
+    contentDiv.appendChild(titleElement.cloneNode(true));
 
     const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
-    console.log("Description: ", descriptionElement.innerHTML);
-
-    contentDiv.appendChild(titleElement.cloneNode(true));
+    console.log("Description: ", descriptionElement);
     contentDiv.appendChild(descriptionElement.cloneNode(true));
   
     // Add CTA button
