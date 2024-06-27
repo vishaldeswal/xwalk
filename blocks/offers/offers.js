@@ -236,6 +236,7 @@ function createTeaserCard(cardBlock, teaserClass) {
   export default function decorate(block) {
     
     const generatedHTML = buildStructure(block);
+    block.innerHTML = '';
     // Append the generated HTML structure to the block
     block.appendChild(generatedHTML);
   
