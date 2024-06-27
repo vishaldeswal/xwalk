@@ -42,8 +42,11 @@ function createTeaserCard(cardBlock, teaserClass) {
     //const h3 = document.createElement('h3');
    // h3.textContent = title || '';
 
+  
+   const teaserDescription = createElementWithClass('div', 'teaser__description');
    const description = extractElementFromBlock(cardBlock, '[data-aue-prop="offer_Description"]');
-   // const teaserDescription = createElementWithClass('div', 'teaser__description');
+   if(description) teaserDescription.appendChild(description.cloneNode(true));
+
    // teaserDescription.innerHTML = `<p>${description || ''}</p>`;
   
     const teaserActions = createElementWithClass('div', 'teaser__actions');
@@ -57,9 +60,8 @@ function createTeaserCard(cardBlock, teaserClass) {
 
     if(h) teaserTitle.appendChild(h.cloneNode(true));
     teaserInfo.appendChild(teaserTitle);
-    if(description) teaserInfo.appendChild(description.cloneNode(true));
     if(a1) teaserActions.appendChild(a1.cloneNode(true));
-  
+    teaserInfo.appendChild(teaserDescription)
     teaserContent.appendChild(teaserInfo);
     teaserContent.appendChild(teaserActions);
     teaserCard.appendChild(teaserContent);
