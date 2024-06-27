@@ -61,6 +61,20 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     return teaserContainer;
   }
   
+  //Function to extract children of block
+  function extractBlockChildren(block){
+
+    const [component, card1, card2, card3, card4] = block.children;
+    return {
+      component,
+      card1,
+      card2,
+      card3,
+      card4
+    }
+  }
+  
+  
   
   
   // Function to build the HTML structure
@@ -156,6 +170,11 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
   
   // Main decorate function that orchestrates element extraction and structure building
   export default function decorate(block) {
+
+    const blockChilren = extractBlockChildren(block);
+    console.log("BlockChilren:", blockChilren);
+    
+    
     const generatedHTML = buildStructure(block);
   
     // Append the generated HTML structure to the block
