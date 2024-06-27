@@ -101,14 +101,12 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     //p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.';
 
     const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
-    console.log("Title: ", titleElement);
     if (titleElement) {
     contentDiv.appendChild(titleElement.cloneNode(true));
     }
     
     
     const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
-    console.log("Description: ", descriptionElement);
     if (descriptionElement) {
     contentDiv.appendChild(descriptionElement.cloneNode(true));
     } 
@@ -121,7 +119,6 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
 
     // Append CTA directly from block.children[0]
     const ctaElement =  extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_linkText"]');
-    console.log("CtaElement: ", ctaElement);
     if (ctaElement) {
       const ctaClone = ctaElement.cloneNode(true);
 
@@ -135,6 +132,13 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
       ctaClone.classList.add("btn--link", "btn--link-primary"); // Add your CSS classes
       actionDiv.appendChild(ctaClone);
     }
+
+    const leftContainerImage = extractElementFromBlock(blockChilren.component, '[data-aue-prop="offer_BckImg"]' );
+    console.log("Card Images:", leftContainerImage);
+    // if (descriptionElement) {
+    // contentDiv.appendChild(descriptionElement.cloneNode(true));
+    // } 
+
   
     // Create sub-container
     const subContainer = createElementWithClass('div', 'sub-container');
