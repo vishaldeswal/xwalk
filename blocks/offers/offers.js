@@ -104,7 +104,7 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     console.log("Title: ", titleElement);
 
     const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
-    console.log("Description: ", descriptionElement);
+    console.log("Description: ", descriptionElement.innerHTML);
 
     contentDiv.appendChild(titleElement.cloneNode(true));
     contentDiv.appendChild(descriptionElement.cloneNode(true));
