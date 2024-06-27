@@ -133,52 +133,57 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
       actionDiv.appendChild(ctaClone);
     }
 
-    const leftContainerImage = extractElementFromBlock(blockChilren.card1, '[data-aue-prop="offer_BckImg"]');;
-    console.log("Card Images:", leftContainerImage);
-    // if (descriptionElement) {
-    // contentDiv.appendChild(descriptionElement.cloneNode(true));
-    // } 
-
-  
     // Create sub-container
     const subContainer = createElementWithClass('div', 'sub-container');
     const leftContainer = createElementWithClass('div', 'left-container');
-    const leftImg = document.createElement('img');
-    leftImg.setAttribute('src', '/content/dam/vishal_eds/desktop-left-img.png');
-    leftImg.setAttribute('alt', 'mobile img');
-    leftContainer.appendChild(leftImg);
+    
+    // const leftImg = document.createElement('img');
+    // leftImg.setAttribute('src', '/content/dam/vishal_eds/desktop-left-img.png');
+    // leftImg.setAttribute('alt', 'mobile img');
+    // leftContainer.appendChild(leftImg);
+    const leftContainerImage = extractElementFromBlock(blockChilren.card1, '[data-aue-prop="offer_BckImg"]');
+    if (leftContainerImage) {
+      leftContainer.appendChild(leftContainerImage.cloneNode(true));
+    } 
+    
   
     const rightContainer = createElementWithClass('div', 'right-container');
   
     // Right container card 1
     const rightCard1 = createElementWithClass('div', 'right-container__card-1');
-    const img1 = document.createElement('img');
-    img1.setAttribute('src', '/content/dam/vishal_eds/mobile-image.png');
-    img1.setAttribute('alt', 'mobile img');
-    const content1 = createElementWithClass('div', 'right-container__content');
-
-    const innerContent1 = createElementWithClass('div', 'immersive__content');
-    const strong = document.createElement('strong');
-    strong.textContent = 'Lorem Ipsum';
-    innerContent1.appendChild(strong);
+    const img1 = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_BckImg"]');
+    // const img1 = document.createElement('img');
+    // img1.setAttribute('src', '/content/dam/vishal_eds/mobile-image.png');
+    // img1.setAttribute('alt', 'mobile img');
     
-    const p1 = document.createElement('p');
-    p1.textContent = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.';
-    innerContent1.appendChild(p1);
+    const content1 = createElementWithClass('div', 'right-container__content');
+    const innerContent1 = createElementWithClass('div', 'immersive__content');
+
+    const card2Title = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_Title"]');
+    // const strong = document.createElement('strong');
+    // strong.textContent = 'Lorem Ipsum';
+    if(card2Title) innerContent1.appendChild(card2Title.cloneNode(true));
+    
+
+    const description = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_Description"]');
+    // const p1 = document.createElement('p');
+    // p1.textContent = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.';
+    if(description) innerContent1.appendChild(description.cloneNode(true));
     
     const action1 = createElementWithClass('div', 'immersive__action');
-    const a1 = document.createElement('a');
-    a1.setAttribute('href', '#');
-    a1.setAttribute('title', '#');
+    const a1= extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_linkText"]');;
+    // const a1 = document.createElement('a');
+    // a1.setAttribute('href', '#');
+    // a1.setAttribute('title', '#');
     a1.classList.add('button', 'primary__btn');
     a1.setAttribute('target', '_self');
     a1.textContent = 'Get Exchange';
 
-    action1.appendChild(a1);
+    action1.appendChild(a1.cloneNode(true));
     innerContent1.appendChild(action1);
 
     content1.appendChild(innerContent1);
-    rightCard1.appendChild(img1);
+    rightCard1.appendChild(img1.cloneNode(true));
     rightCard1.appendChild(content1);
     
     // Right container sub-container
