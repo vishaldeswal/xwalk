@@ -133,7 +133,7 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
       actionDiv.appendChild(ctaClone);
     }
 
-    const leftContainerImage = extractElementFromBlock(blockChilren.component, '[data-aue-prop="offer_BckImg"]' );
+    const leftContainerImage = block.getElementsByTagName("pictures");
     console.log("Card Images:", leftContainerImage);
     // if (descriptionElement) {
     // contentDiv.appendChild(descriptionElement.cloneNode(true));
