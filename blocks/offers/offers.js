@@ -87,22 +87,27 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     const blockChilren = extractBlockChildren(block);
     console.log("BlockChilren:", blockChilren);
     
-    const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
-    console.log("Title: ", titleElement);
-
-
+   
     const section = createElementWithClass('section', 'deals-offers-container');
     const wrapper = createElementWithClass('div', 'immersive__wrapper-light');
     const contentDiv = createElementWithClass('div', 'immersive__content');
     const actionDiv = createElementWithClass('div', 'immersive__action-btn');
   
     // Add main content
-    const h2 = document.createElement('h2');
-    h2.textContent = 'Exciting offers and deals for you!';
-    const p = document.createElement('p');
-    p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.';
-    contentDiv.appendChild(h2);
-    contentDiv.appendChild(p);
+    //const h2 = document.createElement('h2');
+    //h2.textContent = 'Exciting offers and deals for you!';
+
+    //const p = document.createElement('p');
+    //p.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.';
+
+    const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
+    console.log("Title: ", titleElement);
+
+    const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
+    console.log("Description: ", descriptionElement);
+
+    contentDiv.appendChild(titleElement.cloneNode(true));
+    contentDiv.appendChild(descriptionElement.cloneNode(true));
   
     // Add CTA button
     const ctaElement = createCTAElement('View More', '#');
