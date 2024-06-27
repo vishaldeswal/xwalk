@@ -57,8 +57,8 @@ function createTeaserCard(cardBlock, teaserClass) {
 
     if(h) teaserTitle.appendChild(h.cloneNode(true));
     teaserInfo.appendChild(teaserTitle);
-    if(description) teaserInfo.appendChild(description);
-    if(a1) teaserActions.appendChild(a1);
+    if(description) teaserInfo.appendChild(description.cloneNode(true));
+    if(a1) teaserActions.appendChild(a1.cloneNode(true));
   
     teaserContent.appendChild(teaserInfo);
     teaserContent.appendChild(teaserActions);
