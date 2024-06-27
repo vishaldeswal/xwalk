@@ -73,12 +73,24 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
       card4
     }
   }
+
+  function extractElementFromBlock(block, selector){
+    return block.querySelector(selector);
+  }
   
   
   
   
   // Function to build the HTML structure
   function buildStructure(block) {
+
+    const blockChilren = extractBlockChildren(block);
+    console.log("BlockChilren:", blockChilren);
+    
+    const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
+    console.log("Title: ", titleElement);
+
+
     const section = createElementWithClass('section', 'deals-offers-container');
     const wrapper = createElementWithClass('div', 'immersive__wrapper-light');
     const contentDiv = createElementWithClass('div', 'immersive__content');
@@ -170,11 +182,6 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
   
   // Main decorate function that orchestrates element extraction and structure building
   export default function decorate(block) {
-
-    const blockChilren = extractBlockChildren(block);
-    console.log("BlockChilren:", blockChilren);
-    console.log("Component:", blockChilren.component.innerHTML);
-    
     
     const generatedHTML = buildStructure(block);
   
