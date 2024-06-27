@@ -46,7 +46,7 @@ function createTeaserCard(cardBlock, teaserClass) {
   
 
     const teaserDescription = createElementWithClass('div', 'teaser__description');
-    if(description) teaserDescription.appendChild(description);
+    if(description) teaserDescription.appendChild(description.cloneNode(true));
    // teaserDescription.innerHTML = `<p>${description || ''}</p>`;
   
     const teaserActions = createElementWithClass('div', 'teaser__actions');
@@ -58,10 +58,10 @@ function createTeaserCard(cardBlock, teaserClass) {
    // actionLink.setAttribute('target', '_blank');
    // actionLink.textContent = actionText || 'Know More';
 
-    if(h) teaserTitle.appendChild(h);
+    if(h) teaserTitle.appendChild(h.cloneNode(true));
     teaserInfo.appendChild(teaserTitle);
    
-    if(a1) teaserActions.appendChild(a1);
+    if(a1) teaserActions.appendChild(a1.cloneNode(true));
     teaserInfo.appendChild(teaserDescription)
     teaserContent.appendChild(teaserInfo);
     teaserContent.appendChild(teaserActions);
@@ -112,13 +112,13 @@ function createTeaserCard(cardBlock, teaserClass) {
 
     const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
     if (titleElement) {
-    contentDiv.appendChild(titleElement);
+    contentDiv.appendChild(titleElement.cloneNode(true));
     }
     
     
     const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
     if (descriptionElement) {
-    contentDiv.appendChild(descriptionElement);
+    contentDiv.appendChild(descriptionElement.cloneNode(true));
     } 
 
 
@@ -136,11 +136,11 @@ function createTeaserCard(cardBlock, teaserClass) {
       const span = document.createElement("span");
       const img = document.createElement("img");
       img.src = "/content/dam/vishal_eds/north_east.svg"; // Replace with your SVG image path
-      span.appendChild(img);
+      span.appendChild(img.cloneNode(true));
       ctaClone.appendChild(span);
       ctaClone.classList.remove("button");
       ctaClone.classList.add("btn--link", "btn--link-primary"); // Add your CSS classes
-      actionDiv.appendChild(ctaClone);
+      actionDiv.appendChild(ctaClone.cloneNode(true));
     }
 
     // Create sub-container
@@ -153,7 +153,7 @@ function createTeaserCard(cardBlock, teaserClass) {
     // leftContainer.appendChild(leftImg);
     const leftContainerImage = extractElementFromBlock(blockChilren.card1, '[data-aue-prop="offer_BckImg"]');
     if (leftContainerImage) {
-      leftContainer.appendChild(leftContainerImage);
+      leftContainer.appendChild(leftContainerImage.cloneNode(true));
     } 
     
   
@@ -172,13 +172,13 @@ function createTeaserCard(cardBlock, teaserClass) {
     const card2Title = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_Title"]');
     // const strong = document.createElement('strong');
     // strong.textContent = 'Lorem Ipsum';
-    if(card2Title) innerContent1.appendChild(card2Title);
+    if(card2Title) innerContent1.appendChild(card2Title.cloneNode(true));
     
 
     const description = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_Description"]');
     // const p1 = document.createElement('p');
     // p1.textContent = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.';
-    if(description) innerContent1.appendChild(description);
+    if(description) innerContent1.appendChild(description.cloneNode(true));
     
     const action1 = createElementWithClass('div', 'immersive__action');
     const a1= extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_linkText"]');
@@ -189,13 +189,13 @@ function createTeaserCard(cardBlock, teaserClass) {
     //a1.setAttribute('target', '_self');
     //a1.textContent = 'Get Exchange';
 
-    if(a1) action1.appendChild(a1);
+    if(a1) action1.appendChild(a1.cloneNode(true));
     innerContent1.appendChild(action1);
     content1.appendChild(innerContent1);
     const picture = document.createElement("picture");
     if(img1){
       
-      picture.appendChild(img1);
+      picture.appendChild(img1.cloneNode(true));
       
     }
     rightCard1.appendChild(picture);
