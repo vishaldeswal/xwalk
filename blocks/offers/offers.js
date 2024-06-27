@@ -102,15 +102,29 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
 
     const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
     console.log("Title: ", titleElement);
+    if (titleElement) {
     contentDiv.appendChild(titleElement.cloneNode(true));
-
+    }
+    
+    
     const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
     console.log("Description: ", descriptionElement);
+    if (descriptionElement) {
     contentDiv.appendChild(descriptionElement.cloneNode(true));
-  
+    } 
+
+
+
     // Add CTA button
-    const ctaElement = createCTAElement('View More', '#');
-    actionDiv.appendChild(ctaElement);
+    // const ctaElement = createCTAElement('View More', '#');
+    // actionDiv.appendChild(ctaElement);
+
+    // Append CTA directly from block.children[0]
+    const ctaElement =  extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_linkText"]');
+    console.log("CtaElement: ", ctaElement);
+    if (ctaElement) {
+    const ctaClone = ctaElement.cloneNode(true);
+    }
   
     // Create sub-container
     const subContainer = createElementWithClass('div', 'sub-container');
