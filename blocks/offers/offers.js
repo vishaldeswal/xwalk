@@ -133,7 +133,7 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
       actionDiv.appendChild(ctaClone);
     }
 
-    const leftContainerImage = block.getElementsByTagName("picture");
+    const leftContainerImage = block.getElementsByTagName('img');
     console.log("Card Images:", leftContainerImage);
     // if (descriptionElement) {
     // contentDiv.appendChild(descriptionElement.cloneNode(true));
