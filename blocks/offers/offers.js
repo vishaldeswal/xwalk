@@ -239,7 +239,6 @@ function createTeaserCard(cardBlock, teaserClass) {
     // Append the generated HTML structure to the block
     block.appendChild(generatedHTML);
   
-    // Return or log if needed
-    console.log("Generated HTML Structure:", generatedHTML.outerHTML);
+    
   }
   
