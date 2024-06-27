@@ -123,7 +123,17 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     const ctaElement =  extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_linkText"]');
     console.log("CtaElement: ", ctaElement);
     if (ctaElement) {
-    const ctaClone = ctaElement.cloneNode(true);
+      const ctaClone = ctaElement.cloneNode(true);
+
+      // Append SVG image
+      const span = document.createElement("span");
+      const img = document.createElement("img");
+      img.src = "/content/dam/vishal_eds/north_east.svg"; // Replace with your SVG image path
+      span.appendChild(img);
+      ctaClone.appendChild(span);
+      ctaClone.classList.remove("button");
+      ctaClone.classList.add("btn--link", "btn--link-primary"); // Add your CSS classes
+      actionDiv.appendChild(ctaClone);
     }
   
     // Create sub-container
