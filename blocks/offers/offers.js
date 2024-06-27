@@ -181,11 +181,14 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
 
     if(a1) action1.appendChild(a1.cloneNode(true));
     innerContent1.appendChild(action1);
-
     content1.appendChild(innerContent1);
+    const picture = document.createElement("picture");
     if(img1){
-      rightCard1.appendChild(img1.cloneNode(true));
+      
+      picture.appendChild(img1.cloneNode(true));
+      
     }
+    rightCard1.appendChild(picture);
    
     rightCard1.appendChild(content1);
     
