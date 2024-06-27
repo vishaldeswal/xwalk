@@ -45,7 +45,7 @@ function createTeaserCard(cardBlock, teaserClass) {
   
    const teaserDescription = createElementWithClass('div', 'teaser__description');
    const description = extractElementFromBlock(cardBlock, '[data-aue-prop="offer_Description"]');
-   if(description) teaserDescription.appendChild(description.cloneNode(true));
+   if(description) teaserDescription.appendChild(description);
 
    // teaserDescription.innerHTML = `<p>${description || ''}</p>`;
   
@@ -58,9 +58,9 @@ function createTeaserCard(cardBlock, teaserClass) {
    // actionLink.setAttribute('target', '_blank');
    // actionLink.textContent = actionText || 'Know More';
 
-    if(h) teaserTitle.appendChild(h.cloneNode(true));
+    if(h) teaserTitle.appendChild(h);
     teaserInfo.appendChild(teaserTitle);
-    if(a1) teaserActions.appendChild(a1.cloneNode(true));
+    if(a1) teaserActions.appendChild(a1);
     teaserInfo.appendChild(teaserDescription)
     teaserContent.appendChild(teaserInfo);
     teaserContent.appendChild(teaserActions);
@@ -111,13 +111,13 @@ function createTeaserCard(cardBlock, teaserClass) {
 
     const titleElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_title"]' );
     if (titleElement) {
-    contentDiv.appendChild(titleElement.cloneNode(true));
+    contentDiv.appendChild(titleElement);
     }
     
     
     const descriptionElement = extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_description"]' );
     if (descriptionElement) {
-    contentDiv.appendChild(descriptionElement.cloneNode(true));
+    contentDiv.appendChild(descriptionElement);
     } 
 
 
@@ -129,7 +129,7 @@ function createTeaserCard(cardBlock, teaserClass) {
     // Append CTA directly from block.children[0]
     const ctaElement =  extractElementFromBlock(blockChilren.component, '[data-aue-prop="component_linkText"]');
     if (ctaElement) {
-      const ctaClone = ctaElement.cloneNode(true);
+      const ctaClone = ctaElement;
 
       // Append SVG image
       const span = document.createElement("span");
@@ -152,7 +152,7 @@ function createTeaserCard(cardBlock, teaserClass) {
     // leftContainer.appendChild(leftImg);
     const leftContainerImage = extractElementFromBlock(blockChilren.card1, '[data-aue-prop="offer_BckImg"]');
     if (leftContainerImage) {
-      leftContainer.appendChild(leftContainerImage.cloneNode(true));
+      leftContainer.appendChild(leftContainerImage);
     } 
     
   
@@ -171,13 +171,13 @@ function createTeaserCard(cardBlock, teaserClass) {
     const card2Title = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_Title"]');
     // const strong = document.createElement('strong');
     // strong.textContent = 'Lorem Ipsum';
-    if(card2Title) innerContent1.appendChild(card2Title.cloneNode(true));
+    if(card2Title) innerContent1.appendChild(card2Title);
     
 
     const description = extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_Description"]');
     // const p1 = document.createElement('p');
     // p1.textContent = 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.';
-    if(description) innerContent1.appendChild(description.cloneNode(true));
+    if(description) innerContent1.appendChild(description);
     
     const action1 = createElementWithClass('div', 'immersive__action');
     const a1= extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_linkText"]');
@@ -188,13 +188,13 @@ function createTeaserCard(cardBlock, teaserClass) {
     //a1.setAttribute('target', '_self');
     //a1.textContent = 'Get Exchange';
 
-    if(a1) action1.appendChild(a1.cloneNode(true));
+    if(a1) action1.appendChild(a1);
     innerContent1.appendChild(action1);
     content1.appendChild(innerContent1);
     const picture = document.createElement("picture");
     if(img1){
       
-      picture.appendChild(img1.cloneNode(true));
+      picture.appendChild(img1);
       
     }
     rightCard1.appendChild(picture);
