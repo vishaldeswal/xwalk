@@ -176,8 +176,8 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     // a1.setAttribute('href', '#');
     // a1.setAttribute('title', '#');
     a1.classList.add('button', 'primary__btn');
-    a1.setAttribute('target', '_self');
-    a1.textContent = 'Get Exchange';
+    //a1.setAttribute('target', '_self');
+    //a1.textContent = 'Get Exchange';
 
     action1.appendChild(a1.cloneNode(true));
     innerContent1.appendChild(action1);
