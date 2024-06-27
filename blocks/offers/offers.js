@@ -171,7 +171,7 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
     if(description) innerContent1.appendChild(description.cloneNode(true));
     
     const action1 = createElementWithClass('div', 'immersive__action');
-    const a1= extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_linkText"]');;
+    const a1= extractElementFromBlock(blockChilren.card2, '[data-aue-prop="offer_linkText"]');
     // const a1 = document.createElement('a');
     // a1.setAttribute('href', '#');
     // a1.setAttribute('title', '#');
