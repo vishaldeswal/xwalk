@@ -28,30 +28,37 @@ function createElementWithClass(tagName, classNames) {
   }
   
 // Function to create teaser card with title, description, and action
-function createTeaserCard(title, description, actionText, actionUrl, teaserClass) {
+function createTeaserCard(cardBlock, teaserClass) {
+    
+  
     const teaserContainer = createElementWithClass('div', 'light-teaser buyers-guide-teaser');
     const teaserCard = createElementWithClass('div', `teaser__card ${teaserClass}`);
     const teaserContent = createElementWithClass('div', 'teaser__content');
     const teaserInfo = createElementWithClass('div', 'teaser__info');
     const teaserTitle = createElementWithClass('div', 'teaser__title');
-    const h3 = document.createElement('h3');
-    h3.textContent = title || '';
-  
-    const teaserDescription = createElementWithClass('div', 'teaser__description');
-    teaserDescription.innerHTML = `<p>${description || ''}</p>`;
+    
+    const h = extractElementFromBlock(cardBlock, '[data-aue-prop="offer_Title"]');
+   
+    //const h3 = document.createElement('h3');
+   // h3.textContent = title || '';
+
+   const description = extractElementFromBlock(cardBlock, '[data-aue-prop="offer_Description"]');
+   // const teaserDescription = createElementWithClass('div', 'teaser__description');
+   // teaserDescription.innerHTML = `<p>${description || ''}</p>`;
   
     const teaserActions = createElementWithClass('div', 'teaser__actions');
-    const actionLink = document.createElement('a');
-    actionLink.setAttribute('href', actionUrl || '#');
-    actionLink.setAttribute('title', actionUrl || '#');
-    actionLink.classList.add('button', 'primary__btn');
-    actionLink.setAttribute('target', '_blank');
-    actionLink.textContent = actionText || 'Know More';
-  
-    teaserTitle.appendChild(h3);
+    const a1=extractElementFromBlock(cardBlock, '[data-aue-prop="offer_linkText"]');
+   // const actionLink = document.createElement('a');
+   // actionLink.setAttribute('href', actionUrl || '#');
+   //actionLink.setAttribute('title', actionUrl || '#');
+    a1.classList.add('button', 'primary__btn');
+   // actionLink.setAttribute('target', '_blank');
+   // actionLink.textContent = actionText || 'Know More';
+
+    if(h) teaserTitle.appendChild(h.cloneNode(true));
     teaserInfo.appendChild(teaserTitle);
-    teaserInfo.appendChild(teaserDescription);
-    teaserActions.appendChild(actionLink);
+    if(description) teaserInfo.appendChild(description);
+    if(a1) teaserActions.appendChild(a1);
   
     teaserContent.appendChild(teaserInfo);
     teaserContent.appendChild(teaserActions);
@@ -197,12 +204,12 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
   
     // Right container card 2
     const rightCard2 = createElementWithClass('div', 'right-container__card-2');
-    const teaserCard2 = createTeaserCard('Lorem Ipsum', 'Lorem ipsum dolor sit amet lorem ipsum dolor.', 'Know More', 'https://google.com', 'teaser-light');
+    const teaserCard2 = createTeaserCard(blockChilren.card3, 'teaser-light');
     rightCard2.appendChild(teaserCard2);
   
     // Right container card 3
     const rightCard3 = createElementWithClass('div', 'right-container__card-3');
-    const teaserCard3 = createTeaserCard('Lorem Ipsum', 'Lorem ipsum dolor sit amet lorem ipsum dolor.', 'Know More', 'https://google.com', 'teaser-dark');
+    const teaserCard3 = createTeaserCard(blockChilren.card4, 'teaser-dark');
     rightCard3.appendChild(teaserCard3);
   
     rightSubContainer.appendChild(rightCard2);
