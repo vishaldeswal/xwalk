@@ -173,6 +173,7 @@ function createTeaserCard(title, description, actionText, actionUrl, teaserClass
 
     const blockChilren = extractBlockChildren(block);
     console.log("BlockChilren:", blockChilren);
+    console.log("Component:", blockChilren.component.innerHTML);
     
     
     const generatedHTML = buildStructure(block);
