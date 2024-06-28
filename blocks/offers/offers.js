@@ -14,7 +14,7 @@ export default function decorate(block) {
   a.classList.remove("button");
   a.classList.add("btn--link", "btn--link-primary");
   a.innerHTML=`${a.innerText} 
-                <span>${btnIcon}</span>`;
+                <span>${btnIcon.outerHTML}</span>`;
 console.log("anchor tag innerHTML", a.innerHTML);
 
   // Construct the new HTML structure
