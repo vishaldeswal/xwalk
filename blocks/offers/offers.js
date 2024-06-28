@@ -85,7 +85,14 @@ function createSecondaryOffer(teaser) {
     a.classList.add("button", "primary__btn");
   }
 
-  const cardHTML= `<div class="right-container__card-1">
+  const secCardContainer = document.createElement('div');
+  secCardContainer.classList.add('right-container__card-1');
+
+  Array.from(teaser.attributes).forEach(attr => {
+    secCardContainer.setAttribute(attr.name, attr.value);
+});
+
+  secCardContainer.innerHTML = `
                         <picture>
                             <source srcset="${bckImg.src}" media="(max-width: 768pxpx)">
                             <source srcset="${bckImg.src}" media="(min-width: 1024px)">
@@ -100,10 +107,10 @@ function createSecondaryOffer(teaser) {
                                  </div>
                             </div>
                         </div>
-                    </div>`;
+                    `;
 
 
-  return cardHTML;
+  return secCardContainer.outerHTML;
 }
 
 function createGeneralOffer(teaser) {
