@@ -1,132 +1,106 @@
-function createOffersHTML(component){
+function createOffersHTML(component) {
   let title = component.querySelector('[data-aue-prop="component_title"]');
-  let description = component.querySelector('[data-aue-prop="component_description"]');
+  let description = component.querySelector(
+    '[data-aue-prop="component_description"]'
+  );
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
 
   if (a) {
     a.classList.remove("button");
     a.classList.add("btn--link", "btn--link-primary");
-    a.innerHTML = `${a.innerText} <span>${btnIcon? `${btnIcon.outerHTML}`: ''}</span>`;
+    a.innerHTML = `${a.innerText} <span>${
+      btnIcon ? `${btnIcon.outerHTML}` : ""
+    }</span>`;
     console.log("anchor tag innerHTML", a.innerHTML);
   }
 
   const componentHTML = `
   <div class="immersive__content heading-content">
-  ${title? `<h2>${title.innerText}</h2>` : ''}
-  ${description? `<p>${description.innerText}</p>` : ''}
+  ${title ? `<h2>${title.innerText}</h2>` : ""}
+  ${description ? `<p>${description.innerText}</p>` : ""}
       <div class="immersive__action-btn">
-          ${a? a.outerHTML: ''}
+          ${a ? a.outerHTML : ""}
       </div>
   </div>
 `;
 
-
   return componentHTML;
 }
 
-
-function createPrimaryOffer(teaser){
-
+function createPrimaryOffer(teaser) {
   let title = teaser.querySelector('[data-aue-prop="offer_Title"]');
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
 
   if (a) {
-    a.classList.add("button","primary__btn");
+    a.classList.add("button", "primary__btn");
   }
 
-  const teaserHTML = `  <div class="left-container">
-                    <picture>
-                        <source srcset="./images/desktop-left-image.jpg" media="(min-width: 1024px)">
-                        ${bckImg? `${bckImg.outerHTML}`: ''}
-                    </picture>
-                    <div class="light-teaser buyers-guide-teaser">
-                        <div class="teaser__card teaser-grey">
-                            <div class="teaser__content">
-                                <div class="teaser__info left-img-over-text">
-                                    <div class="teaser__title">
-                                      ${title? `<h3>${title.innerText}</h3>`: ''}
-                                    </div>
-                                    <div class="teaser__description">
-                                        ${description? `<p>${description.innerText}</p>`:''}
-                                    </div>
-                                </div>
-                                <div class="teaser__action-btn">
-                                  ${a? a.outerHTML : ''}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>`;
-
-
+  const teaserHTML = `<div class="left-container">
+   <picture>
+      <source srcset="./images/desktop-left-image.jpg" media="(min-width: 1024px)">
+      ${bckImg ? `${bckImg.outerHTML}` : ""}
+   </picture>
+   <div class="light-teaser buyers-guide-teaser">
+      <div class="teaser__card teaser-grey">
+         <div class="teaser__content">
+            <div class="teaser__info left-img-over-text">
+               <div class="teaser__title">
+                  ${
+                    title
+                      ? `
+                  <h3>${title.innerText}</h3>
+                  `
+                      : ""
+                  }
+               </div>
+               <div class="teaser__description">
+                  ${
+                    description
+                      ? `
+                  <p>${description.innerText}</p>
+                  `
+                      : ""
+                  }
+               </div>
+            </div>
+            <div class="teaser__action-btn">
+               ${a ? a.outerHTML : ""}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>`;
 
   return teaserHTML;
 }
 
-function createSecondaryOffer(teaser){
-
+function createSecondaryOffer(teaser) {
   return teaserHTML;
 }
 
-function createGeneralOffer(teaser){
-  
-  
+function createGeneralOffer(teaser) {
   return teaserHTML;
 }
-
-
 
 export default function decorate(block) {
   const [component, card1, card2, card3, card4] = block.children;
 
   // console.log("Component: ", component.outerHTML);
-   console.log("Card 1: ", card1.outerHTML);
+  console.log("Card 1: ", card1.outerHTML);
   // console.log("Card 3: ", card3.outerHTML);
 
   const componentHTML = createOffersHTML(component);
   const primaryCard = createPrimaryOffer(card1);
-  
- 
+
   block.innerHTML = `
   <section class="deals-offers-container">
         <div class="immersive__wrapper-light">
-            <div class="immersive__content heading-content">
-
-                <h2>Exciting offers and deals for you!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.</p>
-                <div class="immersive__action-btn">
-                    <a class="btn--link btn--link-primary" href="#">View More
-                        <span>
-                            <img src="/content/dam/vishal_eds/north_east.svg" />
-                        </span></a>
-                </div> <!-- change -->
-            </div>
+            ${componentHTML}
             <div class="sub-container">
-                <div class="left-container">
-                    <picture>
-                        <source srcset="/content/dam/vishal_eds/desktop-left-image.jpg" media="(min-width: 1024px)">
-                        <img src="./content/dam/vishal_eds/desktop-left-image.jpg" alt="mobile img" />
-                    </picture>
-                    <div class="light-teaser buyers-guide-teaser">
-                        <div class="teaser__card teaser-grey">
-                            <div class="teaser__content">
-                                <div class="teaser__info left-img-over-text">
-                                    <div class="teaser__title">
-                                        <h3>Lorem Ipsum</h3>
-                                    </div>
-                                    <div class="teaser__description">
-                                        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum.</p>
-                                    </div>
-                                </div>
-                                <div class="teaser__action-btn"><a href="#" title="#" class="button primary__btn"
-                                    target="_self">Get Exchange</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                ${primaryCard}
                 <div class="right-container">
                     <div class="right-container__card-1">
                         <picture>
