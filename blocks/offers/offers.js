@@ -39,6 +39,7 @@ function createPrimaryOffer(teaser) {
   }
 
   const teaserHTML = `<div class="left-container">
+   <div data-aue-resource="urn:aemconnection:/content/vishal_xwalk/testPage/jcr:content/root/section/block/item" data-aue-type="component" data-aue-model="offer" data-aue-label="Offer">
    <picture>
       <source srcset="${bckImg.src}" media="(min-width: 1024px)">
       ${bckImg ? `${bckImg.outerHTML}` : ""}
@@ -71,6 +72,7 @@ function createPrimaryOffer(teaser) {
             </div>
          </div>
       </div>
+   </div>
    </div>
 </div>`;
 
