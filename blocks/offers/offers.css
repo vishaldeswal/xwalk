@@ -125,7 +125,7 @@ h2 {
 
 .immersive__wrapper-light .immersive__content p {
   color: var(--Primary-Main, #18171A);
-  font-family: "Fira Sans";
+  /* font-family: "Fira Sans"; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
