@@ -34,7 +34,7 @@ export default function decorate(block) {
   // console.log("Card 1: ", card1.outerHTML);
   // console.log("Card 3: ", card3.outerHTML);
 
-  const componentHTML = createOffersHTM(component);
+  const componentHTML = createOffersHTML(component);
   
  
   block.innerHTML = `
