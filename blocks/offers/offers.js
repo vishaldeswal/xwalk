@@ -12,7 +12,7 @@ export default function decorate(block) {
   );
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
   a.classList.remove("button");
-  a.classList.add("btn--link btn--link-primary");
+  a.classList.add("btn--link", "btn--link-primary");
 
   // Construct the new HTML structure
   let newHTML = `
