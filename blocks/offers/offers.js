@@ -15,7 +15,7 @@ function createOffersHTML(component) {
 
   const componentHTML = `
   <div class="immersive__content heading-content">
-  ${title ? `${title.outerText}` : ""}
+  ${title ? `${title.outerHTML}` : ""}
   ${description ? `<p>${description.innerText}</p>` : ""}
       <div class="immersive__action-btn">
           ${a ? a.outerHTML : ""}
@@ -54,7 +54,7 @@ leftContainer.innerHTML = `
          <div class="teaser__content">
             <div class="teaser__info left-img-over-text">
                <div class="teaser__title">
-                  ${title? `${title.outerText}` : ""}
+                  ${title? `${title.outerHTML}` : ""}
                </div>
                <div class="teaser__description">
                   ${description? `<p>${description.innerText}</p>`: ""}
@@ -98,7 +98,7 @@ function createSecondaryOffer(teaser) {
                         </picture>
                         <div class="right-container__content">
                             <div class="immersive__content img-over-text">
-                                ${title? `${title.outerText}` : ""}
+                                ${title? `${title.outerHTML}` : ""}
                                 ${description? `<p>${description.innerText}</p>`: ""}
                                 <div class="immersive__action">
                                  ${a ? a.outerHTML : ""}
@@ -133,7 +133,7 @@ function createGeneralOffer(teaser, textClass) {
                                     <div class="teaser__content">
                                         <div class="teaser__info">
                                             <div class="teaser__title">
-                                                 ${title? `${title.outerText}` : ""}
+                                                 ${title? `${title.outerHTML}` : ""}
                                             </div>
                                             <div class="teaser__description">
                                                  ${description? `<p>${description.innerText}</p>`: ""}
