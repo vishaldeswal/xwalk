@@ -28,10 +28,10 @@ function createOffersHTML(component){
 
 function createPrimaryOffer(teaser){
 
-  let title = component.querySelector('[data-aue-prop="offer_Title"]');
-  let description = component.querySelector('[data-aue-prop="offer_Description"]');
-  let a = component.querySelector('[data-aue-prop="offer_linkText"]');
-  let bckImg = component.querySelector('[data-aue-prop="offer_BckImg"]');
+  let title = teaser.querySelector('[data-aue-prop="offer_Title"]');
+  let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
+  let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
+  let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
 
   if (a) {
     a.classList.add("button","primary__btn");
