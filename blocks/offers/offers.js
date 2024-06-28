@@ -56,22 +56,10 @@ leftContainer.innerHTML = `
          <div class="teaser__content">
             <div class="teaser__info left-img-over-text">
                <div class="teaser__title">
-                  ${
-                    title
-                      ? `
-                  <h3>${title.innerText}</h3>
-                  `
-                      : ""
-                  }
+                  ${title? `<h3>${title.innerText}</h3>` : ""}
                </div>
                <div class="teaser__description">
-                  ${
-                    description
-                      ? `
-                  <p>${description.innerText}</p>
-                  `
-                      : ""
-                  }
+                  ${description? `<p>${description.innerText}</p>`: ""}
                </div>
             </div>
             <div class="teaser__action-btn">
@@ -88,7 +76,34 @@ leftContainer.innerHTML = `
 }
 
 function createSecondaryOffer(teaser) {
-  return teaserHTML;
+  let title = teaser.querySelector('[data-aue-prop="offer_Title"]');
+  let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
+  let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
+  let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
+
+  if (a) {
+    a.classList.add("button", "primary__btn");
+  }
+
+  const cardHTML= `<div class="right-container__card-1">
+                        <picture>
+                            <source srcset="${bckImg.src}" media="(max-width: 768pxpx)">
+                            <source srcset="${bckImg.src}" media="(min-width: 1024px)">
+                              ${bckImg ? `${bckImg.outerHTML}` : ""}
+                        </picture>
+                        <div class="right-container__content">
+                            <div class="immersive__content img-over-text">
+                                ${title? `<p><strong>${title.innerText}</strong></p>` : ""}
+                                ${description? `<p>${description.innerText}</p>`: ""}
+                                <div class="immersive__action">
+                                 ${a ? a.outerHTML : ""}
+                                 </div>
+                            </div>
+                        </div>
+                    </div>`;
+
+
+  return cardHTML;
 }
 
 function createGeneralOffer(teaser) {
@@ -104,6 +119,7 @@ export default function decorate(block) {
 
   const componentHTML = createOffersHTML(component);
   const primaryCard = createPrimaryOffer(card1);
+  const secondaryCard= createSecondaryOffer(card2);
 
   block.innerHTML = `
   <section class="deals-offers-container">
@@ -112,21 +128,7 @@ export default function decorate(block) {
             <div class="sub-container">
                 ${primaryCard}
                 <div class="right-container">
-                    <div class="right-container__card-1">
-                        <picture>
-                            <source srcset="/content/dam/vishal_eds/mobile-image.png" media="(max-width: 768pxpx)">
-                            <source srcset="/content/dam/vishal_eds/desktop-image.png" media="(min-width: 1024px)">
-                            <img src="/content/dam/vishal_eds/mobile-image.png" alt="mobile img" />
-                        </picture>
-                        <div class="right-container__content">
-                            <div class="immersive__content img-over-text">
-                                <p><strong>Lorem Ipsum</strong></p>
-                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.</p>
-                                <div class="immersive__action"><a href="#" title="#" class="button primary__btn"
-                                        target="_self">Get Exchange</a></div>
-                            </div>
-                        </div>
-                    </div>
+                    ${secondaryCard}
                     <div class="right-container-subcontainer ">
                         <div class="right-container__card-2">
                             <div class="light-teaser buyers-guide-teaser">
