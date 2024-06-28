@@ -10,6 +10,7 @@ export default function decorate(block) {
   let description = component.querySelector('[data-aue-prop="component_description"]');
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
+  console.log("Image: ", btnIcon);
   a.classList.remove("button");
   a.classList.add("btn--link", "btn--link-primary");
   a.innerHTML=`${a.innerText} 
