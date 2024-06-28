@@ -97,7 +97,24 @@ export default function decorate(block) {
         </div>
         <div class="sub-container">
           ${primaryCard}
-          <div class="right-container-subcontainer ">
+
+          <div class="right-container">
+                    <div class="right-container__card-1">
+                        <picture>
+                            <source srcset="./images/mobile-image.png" media="(max-width: 768pxpx)">
+                            <source srcset="./images/desktop-image.png" media="(min-width: 1024px)">
+                            <img src="./images/mobile-image.png" alt="mobile img" />
+                        </picture>
+                        <div class="right-container__content">
+                            <div class="immersive__content img-over-text">
+                                <p><strong>Lorem Ipsum</strong></p>
+                                <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet lorem ipsum.</p>
+                                <div class="immersive__action"><a href="#" title="#" class="button primary__btn"
+                                        target="_self">Get Exchange</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container-subcontainer ">
                         <div class="right-container__card-2">
                             <div class="light-teaser buyers-guide-teaser">
                                 <div class="teaser__card teaser-light">
@@ -145,7 +162,9 @@ export default function decorate(block) {
                         </div>
                     </div>
                 </div>
+          
         </div>
+      
     </section>
   `;
 }
