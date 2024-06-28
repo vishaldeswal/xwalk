@@ -46,7 +46,7 @@ function createPrimaryOffer(teaser) {
 });
 
 
-  const teaserHTML = `<div class="left-container">
+leftContainer.innerHTML = `
    <picture>
       <source srcset="${bckImg.src}" media="(min-width: 1024px)">
       ${bckImg ? `${bckImg.outerHTML}` : ""}
@@ -80,9 +80,11 @@ function createPrimaryOffer(teaser) {
          </div>
       </div>
    </div>
-</div>`;
+`;
 
-  return teaserHTML;
+
+
+  return leftContainer.outerHTML;
 }
 
 function createSecondaryOffer(teaser) {
