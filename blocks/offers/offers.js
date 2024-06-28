@@ -1,9 +1,9 @@
 export default function decorate(block) {
   const [component, card1, card2, card3, card4] = block.children;
 
-  console.log("Component: ", component.outerHTML);
-  console.log("Card 1: ", card1.outerHTML);
-  console.log("Card 3: ", card3.outerHTML);
+  // console.log("Component: ", component.outerHTML);
+  // console.log("Card 1: ", card1.outerHTML);
+  // console.log("Card 3: ", card3.outerHTML);
 
   // Extract elements from the parsed document
   let title = component.querySelector('[data-aue-prop="component_title"]');
@@ -13,7 +13,7 @@ export default function decorate(block) {
   a.classList.remove("button");
   a.classList.add("btn--link", "btn--link-primary");
   
-  a.innerHTML=`<span>${btnIcon}</span>`;
+console.log("anchor tag innerHTML", a.innerHTML);
 
   // Construct the new HTML structure
   const newHTML = `
