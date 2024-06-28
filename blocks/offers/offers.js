@@ -10,20 +10,21 @@ export default function decorate(block) {
   let description = component.querySelector('[data-aue-prop="component_description"]');
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
-  console.log("Image: ", btnIcon);
-  a.classList.remove("button");
-  a.classList.add("btn--link", "btn--link-primary");
-  a.innerHTML=`${a.innerText} 
-                <span>${btnIcon.outerHTML}</span>`;
-console.log("anchor tag innerHTML", a.innerHTML);
+
+  if (a) {
+    a.classList.remove("button");
+    a.classList.add("btn--link", "btn--link-primary");
+    a.innerHTML = `${a.innerText} <span>${btnIcon? `${btnIcon.outerHTML}`: ''}</span>`;
+    console.log("anchor tag innerHTML", a.innerHTML);
+  }
 
   // Construct the new HTML structure
   const newHTML = `
     <div class="immersive__content heading-content">
-        <h2>${title.innerText}</h2>
-        <p>${description.innerText}</p>
+    ${title? `<h2>${title.innerText}</h2>` : ''}
+    ${description? `<p>${description.innerText}</p>` : ''}
         <div class="immersive__action-btn">
-            ${a.outerHTML}<>
+            ${a? a.outerHTML: ''}
         </div>
     </div>
 `;
