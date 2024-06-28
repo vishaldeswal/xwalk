@@ -12,7 +12,8 @@ export default function decorate(block) {
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
   a.classList.remove("button");
   a.classList.add("btn--link", "btn--link-primary");
-  
+  a.innerHTML=`${a.innerText} 
+                <span>${btnIcon}</span>`;
 console.log("anchor tag innerHTML", a.innerHTML);
 
   // Construct the new HTML structure
