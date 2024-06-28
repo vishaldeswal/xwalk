@@ -9,8 +9,11 @@ export default function decorate(block) {
   let title = component.querySelector('[data-aue-prop="component_title"]');
   let description = component.querySelector('[data-aue-prop="component_description"]');
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
+  let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
   a.classList.remove("button");
   a.classList.add("btn--link", "btn--link-primary");
+  
+  a.innerHTML=`<span>${btnIcon}</span>`;
 
   // Construct the new HTML structure
   const newHTML = `
@@ -18,7 +21,7 @@ export default function decorate(block) {
         <h2>${title.innerText}</h2>
         <p>${description.innerText}</p>
         <div class="immersive__action-btn">
-            ${a.outerHTML}
+            ${a.outerHTML}<>
         </div>
     </div>
 `;
