@@ -131,8 +131,8 @@ export default function decorate(block) {
                     <div class="right-container__card-1">
                         <picture>
                             <source srcset="/content/dam/vishal_eds/mobile-image.png" media="(max-width: 768pxpx)">
-                            <source srcset="/content/dam/vishal_eds/mobile-image.png" media="(min-width: 1024px)">
-                            <img src="./images/mobile-image.png" alt="mobile img" />
+                            <source srcset="/content/dam/vishal_eds/desktop-image.png" media="(min-width: 1024px)">
+                            <img src="/content/dam/vishal_eds/mobile-image.png" alt="mobile img" />
                         </picture>
                         <div class="right-container__content">
                             <div class="immersive__content img-over-text">
