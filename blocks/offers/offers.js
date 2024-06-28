@@ -7,9 +7,7 @@ export default function decorate(block) {
 
   // Extract elements from the parsed document
   let title = component.querySelector('[data-aue-prop="component_title"]');
-  let description = component.querySelector(
-    'p[data-aue-prop="component_description"]'
-  );
+  let description = component.querySelector('[data-aue-prop="component_description"]');
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
   a.classList.remove("button");
   a.classList.add("btn--link", "btn--link-primary");
