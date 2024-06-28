@@ -1,4 +1,16 @@
-:root {
+/*
+ * Copyright 2020 Adobe. All rights reserved.
+ * This file is licensed to you under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License. You may obtain a copy
+ * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
+ * OF ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ */
+
+ :root {
   /* Nexa colors */
   --primary-main: #18171a;
   --tertiary-white: #fff;
@@ -240,68 +252,3 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 */
-
-p {
-  font-family: "Fira Sans", sans-serif;
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h3,
-h5,
-h6 {
-  margin: 0;
-}
-h2 {
-  font-family: "Kepler Std";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: 0.64px;
-}
-.text-color-primary {
-  color: var(--Primary-Main, #18171a);
-}
-.text-color-tertiary {
-  color: var(--Tertiary-White, #fff);
-}
-
-.btn {
-  display: flex;
-  height: 32px;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  text-decoration: none;
-}
-.btn--primary-solid {
-  background: var(--Primary-Main, #18171a);
-  color: var(--Tertiary-White, #fff);
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-}
-.btn--link {
-  font-family: "Fira Sans";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 13px;
-  text-decoration: none;
-  display: flex;
-  align-items: flex-start;
-  gap: 10.24px;
-  border-bottom: 0.64px solid var(--Primary-Main, #18171a);
-}
-.btn--link-primary {
-  color: var(--Primary-Main, #18171a);
-}
-.tn--link img {
-  height: 16px;
-}
