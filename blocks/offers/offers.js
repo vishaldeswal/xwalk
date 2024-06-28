@@ -38,8 +38,15 @@ function createPrimaryOffer(teaser) {
     a.classList.add("button", "primary__btn");
   }
 
+  const leftContainer = document.createElement('div');
+  leftContainer.classList.add('left-container');
+
+  Array.from(teaser.attributes).forEach(attr => {
+    leftContainer.setAttribute(attr.name, attr.value);
+});
+
+
   const teaserHTML = `<div class="left-container">
-   <div data-aue-resource="urn:aemconnection:/content/vishal_xwalk/testPage/jcr:content/root/section/block/item" data-aue-type="component" data-aue-model="offer" data-aue-label="Offer">
    <picture>
       <source srcset="${bckImg.src}" media="(min-width: 1024px)">
       ${bckImg ? `${bckImg.outerHTML}` : ""}
@@ -72,7 +79,6 @@ function createPrimaryOffer(teaser) {
             </div>
          </div>
       </div>
-   </div>
    </div>
 </div>`;
 
