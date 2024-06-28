@@ -40,7 +40,7 @@ function createPrimaryOffer(teaser) {
 
   const teaserHTML = `<div class="left-container">
    <picture>
-      <source srcset="./images/desktop-left-image.jpg" media="(min-width: 1024px)">
+      <source srcset="/content/dam/vishal_eds/desktop-image.png" media="(min-width: 1024px)">
       ${bckImg ? `${bckImg.outerHTML}` : ""}
    </picture>
    <div class="light-teaser buyers-guide-teaser">
