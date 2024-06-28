@@ -97,6 +97,54 @@ export default function decorate(block) {
         </div>
         <div class="sub-container">
           ${primaryCard}
+          <div class="right-container-subcontainer ">
+                        <div class="right-container__card-2">
+                            <div class="light-teaser buyers-guide-teaser">
+                                <div class="teaser__card teaser-light">
+                                    <div class="teaser__content">
+                                        <div class="teaser__info">
+                                            <div class="teaser__title">
+                                                <h3>Lorem Ipsum</h3>
+                                            </div>
+                                            <div class="teaser__description">
+                                                <p>Lorem ipsum dolor sit amet lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="teaser__actions">
+                                            <a href="https://google.com" title="https://google.com"
+                                                class="button primary__btn" target="_blank">Know More</a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-container__card-3">
+                            <div class="light-teaser buyers-guide-teaser">
+                                <div class="teaser__card teaser-dark">
+                                    <div class="teaser__content">
+                                        <div class="teaser__info">
+                                            <div class="teaser__title">
+                                                <h3>Lorem Ipsum</h3>
+                                            </div>
+                                            <div class="teaser__description">
+                                                <p>Lorem ipsum dolor sit amet lorem ipsum dolor.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="teaser__actions">
+                                            <a href="https://google.com" title="https://google.com"
+                                                class="button primary__btn" target="_blank">Know More</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </section>
   `;
