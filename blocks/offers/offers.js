@@ -1,8 +1,4 @@
 
-  
- 
-  
-
   //Function to extract children of block
   function extractBlockChildren(block){
 
