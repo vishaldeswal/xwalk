@@ -98,7 +98,7 @@ function createSecondaryOffer(teaser) {
                         </picture>
                         <div class="right-container__content">
                             <div class="immersive__content img-over-text">
-                                ${title? `${title.outerHTML}` : ""}
+                                ${title? `<p><strong>${title.innerText}</strong></p>` : ""}
                                 ${description? `<p>${description.innerText}</p>`: ""}
                                 <div class="immersive__action">
                                  ${a ? a.outerHTML : ""}
@@ -133,7 +133,7 @@ function createGeneralOffer(teaser, textClass) {
                                     <div class="teaser__content">
                                         <div class="teaser__info">
                                             <div class="teaser__title">
-                                                 ${title? `<p><strong>${title.innerText}</strong></p>` : ""}
+                                                 ${title? `<h3>${title.innerText}<h3>` : ""}
                                             </div>
                                             <div class="teaser__description">
                                                  ${description? `<p>${description.innerText}</p>`: ""}
