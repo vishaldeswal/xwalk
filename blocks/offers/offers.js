@@ -6,7 +6,7 @@ export default function decorate(block) {
   console.log("Card 3: ", card3.outerHTML);
 
   // Extract elements from the parsed document
-  let title = component.querySelector('h1[data-aue-prop="component_title"]');
+  let title = component.querySelector('[data-aue-prop="component_title"]');
   let description = component.querySelector(
     'p[data-aue-prop="component_description"]'
   );
@@ -15,9 +15,7 @@ export default function decorate(block) {
   a.classList.add("btn--link", "btn--link-primary");
 
   // Construct the new HTML structure
-  let newHTML = `
-<section class="deals-offers-container">
-        <div class="immersive__wrapper-light">
+  const newHTML = `
     <div class="immersive__content heading-content">
         <h2>${title.innerText}</h2>
         <p>${description.innerText}</p>
@@ -25,9 +23,12 @@ export default function decorate(block) {
             ${a.outerHTML}
         </div>
     </div>
-     </div>
-    </section>
-
 `;
-  block.innerHTML = newHTML;
+  block.innerHTML = `
+  <section class="deals-offers-container">
+        <div class="immersive__wrapper-light">
+          ${newHTML}
+        </div>
+    </section>
+  `;
 }
