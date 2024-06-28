@@ -134,15 +134,15 @@ main pre {
 /* a:any-link {
   color: var(--link-color);
   text-decoration: none;
-}
+}*/
 
 a:hover {
   text-decoration: underline;
   color: var(--link-hover-color);
-} */
+} 
 
 /* buttons */
-/* a.button:any-link,
+ a.button:any-link,
 button {
   font-family: var(--body-font-family);
   display: inline-block;
@@ -169,7 +169,7 @@ button:hover,
 button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
-} */
+} 
 
 button:disabled,
 button:disabled:hover {
