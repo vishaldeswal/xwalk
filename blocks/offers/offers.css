@@ -479,7 +479,7 @@ h2 {
   line-height: 20px;
 }
 .btn--link {
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
