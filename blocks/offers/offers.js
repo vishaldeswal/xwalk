@@ -107,8 +107,9 @@ function createSecondaryOffer(teaser) {
 
   secCardContainer.innerHTML = `
                         <picture>
-                            <source media="(max-width: 768px)" srcset="${bckMobImg ? `${bckMobImg.src}` : ""}" >
                             <source media="(min-width: 1024px)" srcset="${bckImg ? `${bckImg.src}` : ""}" >
+                            <source media="(max-width: 768px)" srcset="${bckMobImg ? `${bckMobImg.src}` : ""}" >
+                           
                               ${bckImg ? `${bckImg.outerHTML}` : ""}
                         </picture>
                         <div class="right-container__content">
