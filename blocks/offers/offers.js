@@ -8,7 +8,9 @@ function createOffersHTML(component) {
   if (a) {
     a.classList.remove("button");
     a.classList.add("btn--link", "btn--link-primary");
-    a.setAttribute('target', target.innerText);
+    if(target){
+      a.setAttribute('target', target.innerText);
+    }
     a.innerHTML = `${a.innerText} <span>${
       btnIcon ? `${btnIcon.outerHTML}` : ""
     }</span>`;
@@ -37,7 +39,9 @@ function createPrimaryOffer(teaser) {
 
   if (a) {
     a.classList.add("button", "primary__btn");
-    a.setAttribute('target', target.innerText);
+    if(target){
+      a.setAttribute('target', target.innerText);
+    }
   }
 
   const leftContainer = document.createElement('div');
@@ -82,12 +86,15 @@ function createSecondaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
-  let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
+  let target =teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
 
   if (a) {
     a.classList.add("button", "primary__btn");
-    a.setAttribute('target', target.innerText);
+    if(target){
+      a.setAttribute('target', target.innerText);
+    }
+    
   }
 
   const secCardContainer = document.createElement('div');
@@ -127,7 +134,9 @@ function createGeneralOffer(teaser, textClass) {
 
   if (a) {
     a.classList.add("button", "primary__btn");
-    a.setAttribute('target', target.innerText);
+    if(target){
+      a.setAttribute('target', target.innerText);
+    }
   }
 
   const genCardContainer = document.createElement('div');
