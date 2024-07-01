@@ -286,7 +286,7 @@
   top: 0;
   left: 0;
   width: 50%;
-  height: 99%;
+  height: 96%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   z-index: 1; 
   /* Ensure the gradient is above the image */
