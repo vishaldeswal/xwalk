@@ -489,7 +489,6 @@
        "required": true,
        "validation": {
          "minLength": 1955,
-         "maxLength": 1985,
          "regExp": "^foo:.*",
          "customErrorMsg": "Why don't you make like a tree and get outta here?"
        }
