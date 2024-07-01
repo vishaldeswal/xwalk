@@ -159,14 +159,19 @@ export default function decorate(block) {
   const [component, card1, card2, card3, card4] = block.children;
 
   // console.log("Component: ", component.outerHTML);
-  console.log("Card 1: ", card1.outerHTML);
+  //console.log("Card 1: ", card1.outerHTML);
   // console.log("Card 3: ", card3.outerHTML);
 
-  const componentHTML = createOffersHTML(component);
-  const primaryCard = createPrimaryOffer(card1);
-  const secondaryCard= createSecondaryOffer(card2);
-  const generalCard1=createGeneralOffer(card3, 'teaser-light');
-  const generalCard2=createGeneralOffer(card4, 'teaser-dark');
+  const componentHTML = component? createOffersHTML(component) : "";
+  const primaryCard = (card1)? createPrimaryOffer(card1): ""; 
+  const secondaryCard= (card2)? createSecondaryOffer(card2): "";
+  const generalCard1= (card3)? createGeneralOffer(card3, 'teaser-light'): "";
+  const generalCard2= (card4)? createGeneralOffer(card4, 'teaser-dark'): "";
+ 
+  
+  
+ 
+  
 
   block.innerHTML = `
   <section class="deals-offers-container">
