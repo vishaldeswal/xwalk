@@ -107,7 +107,7 @@ function createSecondaryOffer(teaser) {
 
   secCardContainer.innerHTML = `
                         <picture>
-                            <source media="(min-width: 1024px)" srcset="${bckImg ? `${bckImg.src}` : ""}" >
+                            <source media="(min-width: 769px)" srcset="${bckImg ? `${bckImg.src}` : ""}" >
                             <source media="(max-width: 768px)" srcset="${bckMobImg ? `${bckMobImg.src}` : ""}" >
                             <img src="/content/dam/vishal_eds/image.jpg" alt="Card1 Image Alternative" data-aue-prop="offer_BckImg" data-aue-label="Offer Background Image" data-aue-type="media">
                               
