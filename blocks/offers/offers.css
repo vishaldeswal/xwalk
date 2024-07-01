@@ -349,6 +349,12 @@
   bottom: 5%;
 }
 
+/*MY CHANGES*/
+.right-container__card-2 .light-teaser .buyers-guide-teaser{
+  height: 100%;
+}
+
+
 .light-teaser.buyers-guide-teaser .teaser__card .teaser__actions a::before {
   content: '';
   background-image: url('./images/white-slant-arrow.svg');
@@ -446,10 +452,6 @@
 }/*newly added */
 
 
-/*MY CHANGES*/
-.light-teaser .buyers-guide-teaser{
-  height: 100%;
-}
 
 .teaser__description p {
   overflow: hidden;  
