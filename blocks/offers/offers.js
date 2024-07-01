@@ -109,7 +109,7 @@ function createSecondaryOffer(teaser) {
                         <picture>
                             <source srcset="${bckMobImg ? `${bckMobImg.src}` : ""}" media="(max-width: 768pxpx)">
                             <source srcset="${bckImg ? `${bckImg.src}` : ""}" media="(min-width: 1024px)">
-                              ${bckMobImg ? `${bckMobImg.outerHTML}` : ""}
+                              ${bckImg ? `${bckImg.outerHTML}` : ""}
                         </picture>
                         <div class="right-container__content">
                             <div class="immersive__content img-over-text">
