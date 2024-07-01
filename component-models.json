@@ -463,6 +463,7 @@
         "label": "Offer Background Image",
         "name": "offer_BckImg",
         "valueType": "string",
+        "required": true,
         "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
       },
 
@@ -471,6 +472,7 @@
         "label": "Offer Background Image Alt",
         "name": "offer_BckImgAlt",
         "valueType": "string",
+        "required": true,
         "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
       }
     ]
