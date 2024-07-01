@@ -33,7 +33,7 @@ function createPrimaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
-  let target=component.querySelector('[data-aue-prop="offer_linkTarget"]');
+  let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
   if (a) {
     a.classList.add("button", "primary__btn");
@@ -82,7 +82,7 @@ function createSecondaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
-  let target=component.querySelector('[data-aue-prop="offer_linkTarget"]');
+  let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
 
   if (a) {
@@ -123,7 +123,7 @@ function createGeneralOffer(teaser, textClass) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let btnIcon = teaser.querySelector('[data-aue-prop="component_linkIcon"]');
-  let target=component.querySelector('[data-aue-prop="offer_linkTarget"]');
+  let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
   if (a) {
     a.classList.add("button", "primary__btn");
