@@ -325,7 +325,7 @@
   clip-path: polygon(54% 12%, 57% 0, 100% 0, 100% 100%, 0 100%, 0 12%);
 }
 
-.sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
+.sub-container .left-container .light-teaser.buyers-guide-teaser .light-teaser{
   position: absolute;
   z-index: 1;
   width: 544px;
