@@ -151,7 +151,7 @@ function createGeneralOffer(teaser, textClass) {
                                     <div class="teaser__content">
                                         <div class="teaser__info">
                                             <div class="teaser__title">
-                                                 ${title? `<h3>${title.innerText}<h3>` : ""}
+                                                 ${title? `${title}` : ""}
                                             </div>
                                             <div class="teaser__description">
                                                  ${description? `<p>${description.innerText}</p>`: ""}
