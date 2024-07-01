@@ -474,6 +474,24 @@
         "valueType": "string",
         "required": true,
         "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
+      },
+
+      {
+        "component": "reference",
+        "label": "Offer Mobile Background Image",
+        "name": "offer_Mobile_BckImg",
+        "valueType": "string",
+        "required": true,
+        "condition": { "===": [{"var" : "card_Type"}, "secondaryOffer"] }
+      },
+
+      {
+        "component": "text",
+        "label": "Offer Mobile Background Image Alt",
+        "name": "offer_Mobile_BckImgAlt",
+        "valueType": "string",
+        "required": true,
+        "condition": { "===": [{"var" : "card_Type"}, "secondaryOffer"] }
       }
     ]
   },
