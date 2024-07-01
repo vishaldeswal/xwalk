@@ -54,7 +54,7 @@ function createPrimaryOffer(teaser) {
 
 leftContainer.innerHTML = `
    <picture>
-      <source srcset="${bckImg.src}" media="(min-width: 1024px)">
+      <source srcset=" ${bckImg ? `${bckImg.src}` : ""}" media="(min-width: 1024px)">
       ${bckImg ? `${bckImg.outerHTML}` : ""}
    </picture>
    <div class="light-teaser buyers-guide-teaser">
