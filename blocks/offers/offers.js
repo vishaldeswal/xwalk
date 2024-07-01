@@ -86,6 +86,7 @@ function createSecondaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
+  let bckMobImg = teaser.querySelector('[data-aue-prop="offer_Mobile_BckImg"]');
   let target =teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
 
@@ -106,7 +107,7 @@ function createSecondaryOffer(teaser) {
 
   secCardContainer.innerHTML = `
                         <picture>
-                            <source srcset="${bckImg.src}" media="(max-width: 768pxpx)">
+                            <source srcset="${bckMobImg.src}" media="(max-width: 768pxpx)">
                             <source srcset="${bckImg.src}" media="(min-width: 1024px)">
                               ${bckImg ? `${bckImg.outerHTML}` : ""}
                         </picture>
