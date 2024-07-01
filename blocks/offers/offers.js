@@ -14,7 +14,7 @@ function createOffersHTML(component) {
     a.innerHTML = `${a.innerText} <span>${
       btnIcon ? `${btnIcon.outerHTML}` : ""
     }</span>`;
-    console.log("anchor tag innerHTML", a.innerHTML);
+    //console.log("anchor tag innerHTML", a.innerHTML);
   }
 
   const componentHTML = `
@@ -131,6 +131,7 @@ function createGeneralOffer(teaser, textClass) {
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let btnIcon = teaser.querySelector('[data-aue-prop="component_linkIcon"]');
   let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
+  console.log("General Title:", title);
 
   if (a) {
     a.classList.add("button", "primary__btn");
