@@ -410,13 +410,39 @@
   {
     "id": "testBlock",
     "fields": [
-      {
-        "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
-      }
+     {
+       "component": "text",
+       "name": "text",
+       "label": "Simple Text",
+       "valueType": "string",
+       "description": "This is a text input with validation.",
+       "required": true,
+       "validation": {
+         "minLength": 1955,
+         "maxLength": 1985,
+         "regExp": "^foo:.*",
+         "customErrorMsg": "Why don't you make like a tree and get outta here?"
+       }
+     }
+    ]
+  },
+  {
+    "id": "another simpletext",
+    "fields": [
+     {
+       "component": "text",
+       "name": "text",
+       "label": "Simple Text",
+       "valueType": "string",
+       "description": "This is a text input with validation.",
+       "required": true,
+       "validation": {
+         "minLength": 1955,
+         "maxLength": 1985,
+         "regExp": "^foo:.*",
+         "customErrorMsg": "Why don't you make like a tree and get outta here?"
+       }
+     }
     ]
   }
 ]
