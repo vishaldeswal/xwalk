@@ -2,7 +2,7 @@ function createOffersHTML(component) {
   let title = component.querySelector('[data-aue-prop="component_title"]');
   let description = component.querySelector('[data-aue-prop="component_description"]');
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
-  let target=component.querySelector('data-aue-prop="component_linkTarget"');
+  let target=component.querySelector('[data-aue-prop="component_linkTarget"]');
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
 
   if (a) {
