@@ -2,11 +2,13 @@ function createOffersHTML(component) {
   let title = component.querySelector('[data-aue-prop="component_title"]');
   let description = component.querySelector('[data-aue-prop="component_description"]');
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
+  let target=component.querySelector('data-aue-prop="component_linkTarget"');
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
 
   if (a) {
     a.classList.remove("button");
     a.classList.add("btn--link", "btn--link-primary");
+    a.setAttribute('target', target.innerText);
     a.innerHTML = `${a.innerText} <span>${
       btnIcon ? `${btnIcon.outerHTML}` : ""
     }</span>`;
