@@ -324,6 +324,27 @@
     "id": "offer",
     "fields": [
       {
+        "component": "select",
+        "name": "card_Type",
+        "value": "primaryOffer",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Primary Offer",
+            "value": "primaryOffer"
+          },
+          {
+            "name": "Secondary Offer",
+            "value": "secondaryOffer"
+          },
+          {
+            "name": "General Offer",
+            "value": "generalOffer"
+          }
+        ]
+      },
+      {
         "component": "text-input",
         "valueType": "string",
         "name": "offer_Title",
@@ -434,20 +455,23 @@
         "component": "reference",
         "label": "Icon for Button",
         "name": "offer_linkIcon",
-        "valueType": "string"
+        "valueType": "string",
+        "condition": { "===": [{"var" : "card_Type"}, "generalOffer"] }
       },
       {
         "component": "reference",
         "label": "Offer Background Image",
         "name": "offer_BckImg",
-        "valueType": "string"
+        "valueType": "string",
+        "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
       },
 
       {
         "component": "text",
         "label": "Offer Background Image Alt",
         "name": "offer_BckImgAlt",
-        "valueType": "string"
+        "valueType": "string",
+        "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
       }
     ]
   },
