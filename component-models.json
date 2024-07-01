@@ -327,7 +327,14 @@
         "component": "text-input",
         "valueType": "string",
         "name": "offer_Title",
-        "label": "Offer Title"
+        "label": "Offer Title",
+        "description": "Enter the title for the offer.",
+        "required": true,
+        "validation": {
+          "minLength": 1955,
+          "maxLength": 1985,
+          "customErrorMsg": "Error occured in Offer Title."
+        }
       },
       {
         "component": "select",
@@ -367,7 +374,14 @@
         "name": "offer_Description",
         "value": "",
         "label": "Offer Description",
-        "valueType": "string"
+        "valueType": "string",
+        "description": "Enter the description for the offer.",
+        "required": true,
+        "validation": {
+          "minLength": 1955,
+          "maxLength": 1985,
+          "customErrorMsg": "Error occured in Offer Description."
+        }
       },
 
       {
@@ -375,7 +389,14 @@
         "valueType": "string",
         "name": "offer_link",
         "value": "#",
-        "label": "Offer CTA Link"
+        "label": "Offer CTA Link",
+        "description": "Choose the link for the offer button.",
+        "required": true,
+        "validation": {
+          "minLength": 1955,
+          "maxLength": 1985,
+          "customErrorMsg": "Error occured in Offer button link."
+        }
       },
 
       {
@@ -383,9 +404,32 @@
         "valueType": "string",
         "name": "offer_linkText",
         "value": "View Offer",
-        "label": "Offer CTA Text"
+        "label": "Offer CTA Text",
+        "description": "Enter the text for the button.",
+        "required": true,
+        "validation": {
+          "minLength": 1955,
+          "maxLength": 1985,
+          "customErrorMsg": "Error occured in Offer button text."
+        }
       },
-
+      {
+        "component": "select",
+        "name": "offer_linkTarget",
+        "value": "_self",
+        "label": "Button Link Target",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Same Tab",
+            "value": "_self"
+          },
+          {
+            "name": "New Tab",
+            "value": "_blank"
+          }
+        ]
+      },
       {
         "component": "reference",
         "label": "Icon for Button",

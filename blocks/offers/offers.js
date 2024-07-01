@@ -33,9 +33,11 @@ function createPrimaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
+  let target=component.querySelector('[data-aue-prop="offer_linkTarget"]');
 
   if (a) {
     a.classList.add("button", "primary__btn");
+    a.setAttribute('target', target.innerText);
   }
 
   const leftContainer = document.createElement('div');
@@ -80,9 +82,12 @@ function createSecondaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
+  let target=component.querySelector('[data-aue-prop="offer_linkTarget"]');
+
 
   if (a) {
     a.classList.add("button", "primary__btn");
+    a.setAttribute('target', target.innerText);
   }
 
   const secCardContainer = document.createElement('div');
@@ -118,9 +123,11 @@ function createGeneralOffer(teaser, textClass) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let btnIcon = teaser.querySelector('[data-aue-prop="component_linkIcon"]');
+  let target=component.querySelector('[data-aue-prop="offer_linkTarget"]');
 
   if (a) {
     a.classList.add("button", "primary__btn");
+    a.setAttribute('target', target.innerText);
   }
 
   const genCardContainer = document.createElement('div');
