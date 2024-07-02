@@ -41,21 +41,16 @@
 } /*changes*/
 
 .immersive__wrapper-light .immersive__content h4 {
-  font-size: 32px;
+  font-family: "Kepler Std";
+  font-size: 18px;
+  font-style: normal;
   font-weight: 600;
-  line-height: 40px;
-  letter-spacing: 0.64px;
-  margin: 0;
-  max-width: 300px;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  padding: 16px 0px 16px 0px;
 
   @media(min-width: 1024px) {
-      margin: 0;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 72px;
-      max-width: 640px;
-      letter-spacing: 1.28px;
+      font-size: 32px;
   }
 }
 
