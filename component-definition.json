@@ -148,12 +148,13 @@
                   "filter":"offers",
                   
                   "model": "offers",
-                  "component_title": "Exciting Offers",
+                  "component_title": "Exciting offers and deals for you!",
                   "component_titleType": "h2",
-                  "component_description": "This is sample descriptiotion for exciting offers and rewards.",
+                  "component_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet.",
                   "component_link":"#",
-                  "component_linkText":"View All Offers",
-                  "component_linkTitle": "all-offer-button"
+                  "component_linkText":"View More",
+                  "component_linkTitle": "all-offer-button",
+                  "component_linkTarget": "_self"
                 }
               }
             }
@@ -170,13 +171,16 @@
                   "name": "Offer",
                   "model": "offer",
                   
-                  "offer_Title":"Card1 Title",
+                  "offer_Title":"Lorem Ipsum",
                   "offer_TitleType": "h3",
-                  "offer_Description":" Lorem  Impsum",
+                  "offer_Description":"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum",
                   "offer_link":"#",
-                  "offer_linkText":"Card1 Text",
+                  "offer_linkText":"Get Exchange",
                   "offer_BckImg":"",
-                  "offer_BckImgAlt":"Card1 Image Alternative"
+                  "offer_BckImgAlt":"Card1 Default Image Alternative",
+                  "offer_linkTarget": "_blank",
+                  "offer_Mobile_BckImg":"",
+                  "offer_Mobile_BckImgAlt":"Card1 Mobile Image Alternative"
 
                 }
               }
