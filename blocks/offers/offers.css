@@ -424,7 +424,7 @@
 
   @media(min-width: 1024px) {
       font-size: 32px;
-      padding: 0px 0px 16px 0px;
+      padding: 16px 0px 16px 0px;
 
   }
 }
@@ -456,7 +456,7 @@
   
   @media(min-width:1024px) {
       font-size: 32px;
-      padding: 0px 0px 16px 0px;
+      padding: 16px 0px 16px 0px;
   }
  }/* newly added */
 
