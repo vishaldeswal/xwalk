@@ -308,6 +308,10 @@
   position: relative;
 }
 
+.light-teaser.buyers-guide-teaser{
+  height: 100%;
+}
+
 .light-teaser.buyers-guide-teaser .teaser__card {
   backdrop-filter: blur(20px);
   padding: 16px;
