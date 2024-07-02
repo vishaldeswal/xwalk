@@ -452,14 +452,6 @@
 }/*newly added */
 
 
-
-.teaser__description p {
-  overflow: hidden;  
-     text-overflow: ellipsis;     display: -webkit-box;     -webkit-line-clamp: 2;
-/* Number of lines to show */
--webkit-box-orient: vertical;
-}
-
 /*--------------------------------NEXA STYLE-----------------------------------------*/
 p {
   font-family: "Fira Sans", sans-serif;
