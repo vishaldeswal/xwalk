@@ -301,6 +301,8 @@
   z-index: 1;
 }
 
+
+
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture{
   width: 100%;
   height: auto;
@@ -313,7 +315,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  /* clip-path: polygon(100% 0, 100% 44%, 100% 90%, 59% 91%, 52% 100%, 0 100%, 0 0); */
+  
 }
 
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture::before {
@@ -357,13 +359,13 @@
 .light-teaser.buyers-guide-teaser .teaser__card.teaser-dark {
   background: var(--Primary-Main, #18171A);
   color: white;
-  /* clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 36%, 0 6%, 16% 6%, 25% 0); */
+  
 }
 
 .light-teaser.buyers-guide-teaser .teaser__card.teaser-grey{
   background: var(--Gradients-Gradient-4---60, linear-gradient(238deg, rgba(56, 79, 110, 0.60) -11.12%, rgba(91, 91, 91, 0.60) 111.5%));
   color: white;
-  /* clip-path: polygon(54% 12%, 57% 0, 100% 0, 100% 100%, 0 100%, 0 12%); */
+  clip-path: polygon(0 20px, 32% 20px, 48% 20px, 100% 20px, 100% 100%, 0 100%);
 }
 /* MY CHANGES*/
 .sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
@@ -577,20 +579,7 @@ h2 {
 
  /* Mobile devices */
  @media (max-width: 600px) {
-  .right-container__card-1,
-  .card_picture_container,
-  .right-container-subcontainer {
-    width: 300px;
-  }
-
-  .card_picture_container {
-    height: 200px;
-  }
-
-  .card_picture_container img {
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 180px, 210px 180px, 200px 100%, 0 100%);
-  }
+  
   
   .teaser-dark{
      clip-path: polygon(0 20px, 60px 20px, 70px 0, 100% 0, 100% 100%, 0 100%);;
@@ -599,15 +588,7 @@ h2 {
 
 /* Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
-  .right-container__card-1,
-  .card_picture_container,
-  .right-container-subcontainer{
-    width: 600px;
-  }
-
-  .card_picture_container {
-    height: 300px;
-  }
+ 
 
   .card_picture_container img  {
     height: 100%;
@@ -622,20 +603,8 @@ h2 {
 
 /* Desktops */
 @media (min-width: 1025px) {
-  .right-container__card-1,
-  .card_picture_container,
-  .right-container-subcontainer  {
-    width: 800px;
-  }
+  
 
-  .card_picture_container {
-    height: 400px;
-  }
-
-  .card_picture_container img {
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 380px, 620px 380px, 610px 100%, 0 100%);
-  }
 
   .teaser-dark{
     clip-path: polygon(0 20px, 205px 20px, 215px 0, 100% 0, 100% 100%, 0 100%);
