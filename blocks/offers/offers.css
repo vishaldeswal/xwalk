@@ -40,7 +40,7 @@
   }
 } /*changes*/
 
-.immersive__wrapper-light .immersive__content  teaser_title {
+.immersive__wrapper-light .immersive__content h4 {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
