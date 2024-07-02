@@ -62,7 +62,7 @@
 .immersive__wrapper-light .immersive__content p {
   color: var(--Primary-Main, #18171A);
   /* font-family: "Fira Sans"; */
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -108,7 +108,7 @@
 
 .immersive__wrapper .immersive__content p strong {
   margin: 0;
-  font-size: 24px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
@@ -116,7 +116,7 @@
 
   @media (min-width:1024px) {
       margin-top: 72px;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 500;
       line-height: 20px;
   }
@@ -427,9 +427,9 @@
   letter-spacing: 0.36px;
   padding: 16px 0px 16px 0px;
 
-  /* @media (min-width: 1024) {
+  @media (min-width: 1024) {
       font-size: 32px;
-  } */
+  }
 }
 
 .light-teaser.buyers-guide-teaser .teaser__info .teaser__description {
@@ -456,7 +456,7 @@
 
 .light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__description{
   @media(min-width:1024px) {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 24px;
       width: 67%;
   }
