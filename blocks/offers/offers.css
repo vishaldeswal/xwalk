@@ -146,12 +146,9 @@
   
   .immersive__wrapper-light .sub-container .immersive__content .immersive__action a {
     display: flex;
-    height: 25px;
     padding: 6px 12px;
     justify-content: center;
     align-items: center;
-    gap: 6px;
-    flex-shrink: 0;
     background-color: #ffffff;
     align-self: stretch;
     font-size: 12px;
