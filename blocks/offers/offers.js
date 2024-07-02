@@ -122,9 +122,9 @@ function createSecondaryOffer(teaser) {
                                  <div class="teaser__title">
                   ${title ? `${title.outerHTML}` : ""}
                </div>
-               <div class="teaser__description">
+              
                   ${description ? `<p>${description.innerText}</p>` : ""}
-               </div>
+               
                                 <div class="immersive__action">
                                  ${a ? a.outerHTML : ""}
                                  </div>

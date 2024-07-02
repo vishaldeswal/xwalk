@@ -58,7 +58,7 @@
   }
 }
 
-.immersive__wrapper-light .immersive__content .teaser__description {
+.immersive__wrapper-light .immersive__content p {
   color: var(--Primary-Main, #18171A);
   font-family: "Fira Sans";
   font-size: 12px;
