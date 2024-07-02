@@ -141,6 +141,7 @@
 
 .immersive__wrapper .immersive__content .immersive__action {
   margin-top: 24px;
+
 }
 
 .immersive__wrapper-light .sub-container .immersive__content .immersive__action a {
@@ -300,11 +301,39 @@
   z-index: 1;
 }
 
+.immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  @media(max-width: 600px) {
+    width: 300px;
+    height: 200px;
+  };
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+
+  };
+
+  @media (min-width: 1025px) {}
+
+}
+
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1 img {
   width: 100%;
   max-width: 100%;
   height: auto;
   clip-path: polygon(100% 0, 100% 44%, 100% 90%, 59% 91%, 52% 100%, 0 100%, 0 0);
+
+  @media(max-width: 600px) {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 180px, 210px 180px, 200px 100%, 0 100%);
+  };
+
+  @media (min-width: 601px) and (max-width: 1024px) {};
+
+  @media (min-width: 1025px) {}
 }
 
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture::before {
