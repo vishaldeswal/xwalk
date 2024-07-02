@@ -364,7 +364,7 @@
   .light-teaser.buyers-guide-teaser .teaser__card.teaser-grey{
     background: var(--Gradients-Gradient-4---60, linear-gradient(238deg, rgba(56, 79, 110, 0.60) -11.12%, rgba(91, 91, 91, 0.60) 111.5%));
     color: white;
-    clip-path: polygon(0 20px, 32% 20px, 48% 20px, 100% 20px, 100% 100%, 0 100%);
+    /* clip-path: polygon(0 20px, 32% 20px, 48% 20px, 100% 20px, 100% 100%, 0 100%); */
   }
   /* MY CHANGES*/
   .sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
