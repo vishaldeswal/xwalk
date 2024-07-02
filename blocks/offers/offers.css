@@ -1,7 +1,7 @@
+
 /* -----------------------STYLE.CSS----------------------------------------------------------- */
 .deals-offers-container {
-  padding: 0 20px 20px 20px;
-  /*changes*/
+  padding: 0 20px 20px 20px; /*changes*/
 }
 
 .immersive__wrapper-light {
@@ -13,9 +13,8 @@
   padding-top: 48px;
 
   @media(min-width: 1024px) {
-    display: inherit;
-    text-align: center;
-    /*changes*/
+      display: inherit;
+      text-align: center;  /*changes*/
   }
 }
 
@@ -28,33 +27,35 @@
 
 
   @media(min-width: 1024px) {
-    top: 110px;
-    left: 64px;
-    text-align: left;
-  }
+      top: 110px;
+      left: 64px;
+      text-align: left;
+  } 
 }
-
-.heading-content {
+.heading-content{
   @media(min-width: 1024px) {
-    display: flex;
-    align-items: flex-end;
-    text-align: left;
+      display: flex;
+      align-items: flex-end;
+      text-align: left;
   }
-}
+} /*changes*/
 
-/*changes*/
-
-.immersive__wrapper-light .immersive__content .teaser__title {
-  font-family: "Kepler Std";
-  font-size: 18px;
-  font-style: normal;
+.immersive__wrapper-light .immersive__content  teaser_title {
+  font-size: 32px;
   font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0.36px;
-  padding: 16px 0px 16px 0px;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+  margin: 0;
+  max-width: 300px;
 
   @media(min-width: 1024px) {
-    font-size: 32px;
+      margin: 0;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72px;
+      max-width: 640px;
+      letter-spacing: 1.28px;
   }
 }
 
@@ -71,13 +72,13 @@
   display: block;
 
   @media(min-width:1024px) {
-    margin-top: 12px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 0;
-    max-width: 280px;
+      margin-top: 12px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 0;
+      max-width: 280px;        
   }
 }
 
@@ -87,7 +88,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-
+  
   line-height: 20px;
   margin-top: 16px;
   margin-bottom: 24px;
@@ -95,17 +96,17 @@
   display: block;
 
   @media(min-width:1024px) {
-    margin-top: 12px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 0;
-    max-width: 280px;
+      margin-top: 12px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 0;
+      max-width: 280px;        
   }
 }
 
-/* .immersive__wrapper .immersive__content p strong {
+.immersive__wrapper .immersive__content p strong {
   margin: 0;
   font-size: 12px;
   font-style: normal;
@@ -114,13 +115,13 @@
   display: block;
 
   @media (min-width:1024px) {
-    margin-top: 72px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 20px;
+      margin-top: 72px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 20px;
   }
-
-} */
+ 
+}
 
 .immersive__wrapper .immersive__content .immersive__action {
   margin-top: 24px;
@@ -142,12 +143,12 @@
   border-radius: unset;
   text-decoration: none;
 
-  @media(min-width: 1024) {
-    font-size: 18px;
-    padding: 8px 18px 8px 20px;
-    margin: 0;
+  @media(min-width: 1024){
+      font-size: 18px;
+      padding: 8px 18px 8px 20px;
+      margin: 0;
   }
-
+  
 }
 
 .immersive__wrapper-light .immersive__action-btn {
@@ -161,14 +162,12 @@
   top: 100%;
 
   @media (min-width:1024px) {
-    position: absolute;
-    right: 0;
-    top: auto;
-    left: auto;
+      position: absolute;
+      right: 0;
+      top: auto;
+      left: auto;
   }
-}
-
-/*changes*/
+}    /*changes*/
 
 .immersive__wrapper-light .immersive__action {
   display: inline-flex;
@@ -176,7 +175,7 @@
   margin-top: 24px;
 
   @media (min-width: 1024) {
-    position: absolute;
+      position: absolute;        
   }
 }
 
@@ -187,26 +186,23 @@
 
 @media (min-width: 1024px) {
   .immersive__wrapper-light .sub-container {
-    order: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-    margin-top: 48px;
+      order: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
   }
-}
-
-/*changes*/
+} /*changes*/
 
 
 .immersive__wrapper-light .sub-container .left-container {
   display: none;
 
   @media(min-width: 1024px) {
-    display: flex;
-    position: relative;
+      display: flex;
+      position: relative;
   }
 }
-
 /* MY CHANGES */
 /* .immersive__wrapper-light .sub-container .left-container img {
   position: relative;
@@ -226,41 +222,37 @@
   object-fit: cover;
 }
 
-.immersive__wrapper-light .sub-container .left-container .teaser__description {
+.immersive__wrapper-light .sub-container .left-container .teaser__description{
   font-size: 12px;
 }
 
-.immersive__wrapper-light .sub-container .left-container .teaser__action-btn {
+.immersive__wrapper-light .sub-container .left-container .teaser__action-btn{
   position: absolute;
   right: 0;
   bottom: 5%;
-}
+} /*newly added*/
 
-/*newly added*/
-
-.immersive__wrapper-light .sub-container .left-container .teaser__action-btn a {
-  display: flex;
-  padding: 8px 12px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  font-size: 16px;
-  color: #18171A;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  border-radius: unset;
-  text-decoration: none;
-
-  @media(min-width: 1024) {
-    font-size: 18px;
-    padding: 8px 18px 8px 20px;
-    margin: 0;
-  }
-}
-
-/*newly added*/
+.immersive__wrapper-light .sub-container .left-container .teaser__action-btn a{
+      display: flex;
+      padding: 8px 12px;
+      background-color: #ffffff;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      font-size: 16px;
+      color: #18171A;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      border-radius: unset;
+      text-decoration: none;
+  
+      @media(min-width: 1024){
+          font-size: 18px;
+          padding: 8px 18px 8px 20px;
+          margin: 0;
+      }
+}/*newly added*/
 
 .immersive__wrapper-light .sub-container .right-container {
   position: relative;
@@ -273,17 +265,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  width: 100%;
-  /*check*/
-}
+  width: 100%; /*check*/
+}/*changes*/
 
-/*changes*/
-
-.img-over-text {
-  @media (min-width: 1024) {
-    padding: 32px 0 0 16px;
+.img-over-text{
+  @media (min-width: 1024){
+      padding: 32px 0 0 16px;
   }
-
+  
 }
 
 .immersive__wrapper-light .sub-container .right-container .right-container__content {
@@ -310,19 +299,16 @@
   width: 50%;
   height: 96%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-  z-index: 1;
+  z-index: 1; 
   /* Ensure the gradient is above the image */
-  pointer-events: none;
-  /* Ensure the gradient doesn't block interactions */
-}
+  pointer-events: none; /* Ensure the gradient doesn't block interactions */
+} /*newly added */
 
-/*newly added */
-
-.immersive__wrapper-light .sub-container .right-container .right-container__card-1 {
+.immersive__wrapper-light .sub-container .right-container .right-container__card-1{
   position: relative;
 }
 
-.light-teaser.buyers-guide-teaser {
+.light-teaser.buyers-guide-teaser{
   height: 100%;
 }
 
@@ -333,7 +319,7 @@
   height: 100%;
 
   @media(min-width: 1024px) {
-    padding: 32px 32px 32px;
+      padding: 32px 32px 32px;
   }
 }
 
@@ -349,14 +335,13 @@
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 36%, 0 6%, 16% 6%, 25% 0);
 }
 
-.light-teaser.buyers-guide-teaser .teaser__card.teaser-grey {
+.light-teaser.buyers-guide-teaser .teaser__card.teaser-grey{
   background: var(--Gradients-Gradient-4---60, linear-gradient(238deg, rgba(56, 79, 110, 0.60) -11.12%, rgba(91, 91, 91, 0.60) 111.5%));
   color: white;
   clip-path: polygon(54% 12%, 57% 0, 100% 0, 100% 100%, 0 100%, 0 12%);
 }
-
 /* MY CHANGES*/
-.sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card {
+.sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
   position: absolute;
   z-index: 1;
   /* width: 544px;
@@ -370,7 +355,7 @@
 }
 
 /*MY CHANGES*/
-.right-container__card-2 .light-teaser .buyers-guide-teaser .teaser__card {
+.right-container__card-2 .light-teaser .buyers-guide-teaser .teaser__card{
   height: 100%;
 }
 
@@ -404,10 +389,10 @@
   background-color: transparent;
 
   @media(min-width:1024px) {
-    font-size: 16px;
-    line-height: 16px;
-    text-underline-offset: 1px;
-    padding-bottom: 1px;
+      font-size: 16px;
+      line-height: 16px;
+      text-underline-offset: 1px;
+      padding-bottom: 1px;
   }
 }
 
@@ -426,7 +411,7 @@
   align-items: flex-start;
   gap: 12px;
 }
-
+  
 .right-container-subcontainer .light-teaser.buyers-guide-teaser .teaser__content {
   height: 100%;
   justify-content: space-between;
@@ -443,7 +428,7 @@
   padding: 16px 0px 16px 0px;
 
   @media(min-width: 1024px) {
-    font-size: 32px;
+      font-size: 32px;
   }
 }
 
@@ -456,14 +441,14 @@
 
 
   @media(min-width:1024px) {
-    font-size: 18px;
-    line-height: 24px;
-    width: 100%;
-
+      font-size: 18px;
+      line-height: 24px;
+      width: 100%;
+     
   }
 }
 
-.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title {
+.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title{
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
@@ -471,29 +456,25 @@
   line-height: 22px;
   letter-spacing: 0.36px;
   padding: 16px 0px 16px 0px;
-
+  
   @media(min-width:1024px) {
-    font-size: 32px;
+      font-size: 32px;
   }
-}
+ }/* newly added */
 
-/* newly added */
-
-.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__description {
+.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__description{
   margin-top: 16px;
   font-size: 12px;
   line-height: 16px;
   width: 85%;
   font-weight: 400;
-
+  
   @media(min-width:1024px) {
-    font-size: 18px;
-    line-height: 24px;
-    width: 67%;
+      font-size: 18px;
+      line-height: 24px;
+      width: 67%;
   }
-}
-
-/*newly added */
+}/*newly added */
 
 
 /*--------------------------------NEXA STYLE-----------------------------------------*/
@@ -543,7 +524,7 @@ h2 {
   font-weight: 400;
   line-height: 20px;
 }*/
-.btn--link {
+ .btn--link {
   font-family: "Fira Sans", sans-serif;
   font-size: 12px;
   font-style: normal;
@@ -558,12 +539,10 @@ h2 {
   @media (min-width:1024px) {
     font-size: 16px;
   }
-}
-
+} 
 .btn--link-primary {
   color: var(--Primary-Main, #18171a);
 }
-
-.btn--link img {
+ .btn--link img {
   height: 16px;
-}
+} 
