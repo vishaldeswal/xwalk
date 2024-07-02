@@ -418,7 +418,7 @@
 }
 
 
-.light-teaser.buyers-guide-teaser .teaser__info .teaser__title {
+.light-teaser.buyers-guide-teaser .teaser__info .teaser__title h4 {
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
@@ -448,7 +448,7 @@
   }
 }
 
-.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title{
+.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title h4{
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
