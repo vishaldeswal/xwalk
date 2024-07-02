@@ -378,8 +378,8 @@
   text-underline-offset: 2px;
   padding: 0;
 
-  font-family: 'Fira Sans';
-  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -389,7 +389,7 @@
   background-color: transparent;
 
   @media(min-width:1024px) {
-      font-size: 12px;
+      font-size: 16px;
       line-height: 16px;
       text-underline-offset: 1px;
       padding-bottom: 1px;
@@ -521,6 +521,10 @@ h2 {
   align-items: flex-start;
   gap: 10.24px;
   border-bottom: 0.64px solid var(--Primary-Main, #18171a);
+
+  @media (min-width:1024px) {
+    font-size: 16px;
+  }
 } 
 .btn--link-primary {
   color: var(--Primary-Main, #18171a);
