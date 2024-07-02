@@ -40,7 +40,7 @@
   }
 } /*changes*/
 
-.immersive__wrapper-light .immersive__content h2 {
+.immersive__wrapper-light .immersive__content h2  {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
@@ -464,14 +464,14 @@
 
 
 /*--------------------------------NEXA STYLE-----------------------------------------*/
-p {
+/* p {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
 }
 h1,
 h2,
 h3,
-h3,
+h4,
 h5,
 h6 {
   margin: 0;
@@ -525,6 +525,6 @@ h2 {
 .btn--link-primary {
   color: var(--Primary-Main, #18171a);
 }
-.tn--link img {
+.btn--link img {
   height: 16px;
-}
+} */
