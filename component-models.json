@@ -422,17 +422,21 @@
   {
     "id": "testBlock",
     "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 10,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
-    }
-  ]
+      {
+         "component": "number",
+         "valueType": "number",
+         "name": "field1",
+         "label": "Number Field",
+         "description": "This is a number field.",
+         "required": true,
+         "placeholder": null,
+         "validation": {
+           "numberMin": 0,
+           "numberMax": 88,
+           "customErrorMsg": "You also need 1.21 gigawatts."
+         }
+       }
+     ]
   },
   {
     "id": "another simpletext",
