@@ -353,7 +353,7 @@
 .light-teaser.buyers-guide-teaser .teaser__card.teaser-light {
   background: var(--Gradients-Gradient-2, linear-gradient(225deg, #B3C4C7 -4.54%, #DAC8C6 115.1%));
   color: #18171A;
-  clip-path: polygon(0 7%, 100% 7%, 100% 100%, 0% 100%);
+  /* clip-path: polygon(0 7%, 100% 7%, 100% 100%, 0% 100%); */
 }
 
 .light-teaser.buyers-guide-teaser .teaser__card.teaser-dark {
@@ -365,7 +365,7 @@
 .light-teaser.buyers-guide-teaser .teaser__card.teaser-grey{
   background: var(--Gradients-Gradient-4---60, linear-gradient(238deg, rgba(56, 79, 110, 0.60) -11.12%, rgba(91, 91, 91, 0.60) 111.5%));
   color: white;
-  clip-path: polygon(0 20px, 32% 20px, 48% 20px, 100% 20px, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 20px, 32% 20px, 48% 20px, 100% 20px, 100% 100%, 0 100%); */
 }
 /* MY CHANGES*/
 .sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
@@ -577,37 +577,124 @@ h2 {
   height: 16px;
 } 
 
- /* Mobile devices */
- @media (max-width: 600px) {
-  
-  
-  .teaser-dark{
-     clip-path: polygon(0 20px, 60px 20px, 70px 0, 100% 0, 100% 100%, 0 100%);;
-  }
+   /*----------CHAT GPT CODE______________*/
+  /* General styles for the right container */
+.right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
- 
-
-  .card_picture_container img  {
-    height: 100%;
-     clip-path: polygon(0 0, 100% 0, 100% 280px, 420px 280px, 410px 100%, 0 100%);
-  }
-   
-   .teaser-dark{
-     clip-path: polygon(0 20px, 115px 20px, 125px 0, 100% 0, 100% 100%, 0 100%);
-  }
-  
+/* Styles for the first card */
+.right-container__card-1 {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
-/* Desktops */
+/* Styles for the picture element */
+.right-container__card-1 picture {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for the image inside picture */
+.right-container__card-1 img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* Styles for the content within the first card */
+.right-container__card-1 .right-container__content {
+  padding: 0px;
+}
+
+/* Styles for the teaser title within the first card */
+.right-container__card-1 .teaser__title h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .right-container,
+  .right-container__card-1,
+  .right-container-subcontainer {
+    width: 310px;
+  }
+
+  .right-container__card-1 {
+    max-width: none; /* Reset max-width for smaller screens */
+  }
+
+  .image-container {
+      max-height: 180px;
+    }
+
+  .image-container img {
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 165px, 190px 165px, 180px 100%, 0 100%);
+    }
+
+    .teaser__card.teaser-dark{
+      clip-path: polygon(0 15px, 30px 15px, 40px 0, 100% 0, 100% 100%, 0 100%);;
+   } 
+   .teaser__card.teaser-light{
+   clip-path: polygon(0 15px, 32% 15px, 48% 15px, 100% 15px, 100% 100%, 0 100%);
+   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .right-container,
+  .right-container__card-1,
+  .right-container-subcontainer {
+    width: 600px;
+  }
+
+  .image-container {
+      max-height: 200px;
+    }
+
+  .image-container img {
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 185px, 360px 185px, 350px 100%, 0 100%);
+    }
+
+    .teaser__card.teaser-dark{
+      clip-path: polygon(0 15px, 60px 15px, 70px 0, 100% 0, 100% 100%, 0 100%);;
+   } 
+   .teaser__card.teaser-light{
+   clip-path: polygon(0 15px, 32% 15px, 48% 15px, 100% 15px, 100% 100%, 0 100%);
+   }
+}
+
 @media (min-width: 1025px) {
-  
+  .right-container,
+  .right-container__card-1,
+  .right-container-subcontainer {
+    width: 620px;
 
-
-  .teaser-dark{
-    clip-path: polygon(0 20px, 205px 20px, 215px 0, 100% 0, 100% 100%, 0 100%);
   }
-  
+
+  .image-container {
+      max-height: 250px;
+    }
+
+  .image-container img {
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% 235px, 360px 235px, 350px 100%, 0 100%);
+    }
+
+    .teaser__card.teaser-dark{
+      clip-path: polygon(0 15px, 50px 15px, 60px 0, 100% 0, 100% 100%, 0 100%);;
+   } 
+   .teaser__card.teaser-light{
+   clip-path: polygon(0 15px, 32% 15px, 48% 15px, 100% 15px, 100% 100%, 0 100%);
+   }
 }
