@@ -40,7 +40,7 @@
   }
 } /*changes*/
 
-.immersive__wrapper-light .immersive__content h4 {
+.immersive__wrapper-light .immersive__content .teaser__title {
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
