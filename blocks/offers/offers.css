@@ -307,17 +307,6 @@
   display: flex;
   justify-content: center;
 
-  @media(max-width: 600px) {
-    width: 300px;
-    height: 200px;
-  };
-
-  @media (min-width: 601px) and (max-width: 1024px) {
-
-  };
-
-  @media (min-width: 1025px) {}
-
 }
 
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1 img {
@@ -325,15 +314,6 @@
   max-width: 100%;
   height: auto;
   clip-path: polygon(100% 0, 100% 44%, 100% 90%, 59% 91%, 52% 100%, 0 100%, 0 0);
-
-  @media(max-width: 600px) {
-    height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 180px, 210px 180px, 200px 100%, 0 100%);
-  };
-
-  @media (min-width: 601px) and (max-width: 1024px) {};
-
-  @media (min-width: 1025px) {}
 }
 
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture::before {
@@ -595,6 +575,70 @@ h2 {
   height: 16px;
 } 
 
-.right-container__card-1{
+ /* Mobile devices */
+ @media (max-width: 600px) {
+  .right-container__card-1,
+  .card_picture_container,
+  .right-container-subcontainer {
+    width: 300px;
+  }
 
+  .card_picture_container {
+    height: 200px;
+  }
+
+  .card_picture_container img {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 180px, 210px 180px, 200px 100%, 0 100%);
+  }
+  
+  .teaser-light{
+     clip-path: polygon(0 20px, 60px 20px, 70px 0, 100% 0, 100% 100%, 0 100%);;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .right-container__card-1,
+  .card_picture_container,
+  .right-container-subcontainer{
+    width: 600px;
+  }
+
+  .card_picture_container {
+    height: 300px;
+  }
+
+  .card_picture_container img  {
+    height: 100%;
+     clip-path: polygon(0 0, 100% 0, 100% 280px, 420px 280px, 410px 100%, 0 100%);
+  }
+   
+   .teaser-light{
+     clip-path: polygon(0 20px, 115px 20px, 125px 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  .right-container__card-1,
+  .card_picture_container,
+  .right-container-subcontainer  {
+    width: 800px;
+  }
+
+  .card_picture_container {
+    height: 400px;
+  }
+
+  .card_picture_container img {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 380px, 620px 380px, 610px 100%, 0 100%);
+  }
+
+  .teaser-light{
+    clip-path: polygon(0 20px, 205px 20px, 215px 0, 100% 0, 100% 100%, 0 100%);
+  }
+  
 }
