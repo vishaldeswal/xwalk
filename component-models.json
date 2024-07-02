@@ -195,13 +195,8 @@
         "valueType": "string",
         "name": "component_title",
         "label": "Title",
-        "description": "Enter the heading for the offers",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offers title input."
-        }
+        "description": "Heading for the offers component",
+        "required": true
       },
       {
         "component": "select",
@@ -242,13 +237,8 @@
         "value": "",
         "label": "Description",
         "valueType": "string",
-        "description": "Enter the description for the offers",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offers description input."
-        }
+        "description": "Description for the offers",
+        "required": true
 
       },
 
@@ -258,13 +248,8 @@
         "name": "component_link",
         "value": "#",
         "label": "CTA Link",
-        "description": "Enter the button link.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offers button link."
-        }
+        "description": "Button link.",
+        "required": true
       },
 
       {
@@ -273,13 +258,8 @@
         "name": "component_linkText",
         "value": "Button",
         "label": "CTA Text",
-        "description": "Enter the button text.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offers button text."
-        }
+        "description": "Button text.",
+        "required": true
       },
       {
         "component": "select",
@@ -310,13 +290,8 @@
         "label": "Icon for Button",
         "name": "component_linkIcon",
         "valueType": "string",
-        "description": "Choose the icon for the button.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offers button icon."
-        }
+        "description": "Icon for the button.",
+        "required": true
       }
     ]
   },
@@ -324,38 +299,12 @@
     "id": "offer",
     "fields": [
       {
-        "component": "select",
-        "name": "card_Type",
-        "value": "primaryOffer",
-        "label": "Type",
-        "valueType": "string",
-        "options": [
-          {
-            "name": "Primary Offer",
-            "value": "primaryOffer"
-          },
-          {
-            "name": "Secondary Offer",
-            "value": "secondaryOffer"
-          },
-          {
-            "name": "General Offer",
-            "value": "generalOffer"
-          }
-        ]
-      },
-      {
         "component": "text-input",
         "valueType": "string",
         "name": "offer_Title",
         "label": "Offer Title",
-        "description": "Enter the title for the offer.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offer Title."
-        }
+        "description": "Title for the offer teaser.",
+        "required": true
       },
       {
         "component": "select",
@@ -396,13 +345,8 @@
         "value": "",
         "label": "Offer Description",
         "valueType": "string",
-        "description": "Enter the description for the offer.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offer Description."
-        }
+        "description": "Description for the offer.",
+        "required": true
       },
 
       {
@@ -411,13 +355,8 @@
         "name": "offer_link",
         "value": "#",
         "label": "Offer CTA Link",
-        "description": "Choose the link for the offer button.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offer button link."
-        }
+        "description": "Link for the offer button.",
+        "required": true
       },
 
       {
@@ -426,13 +365,8 @@
         "name": "offer_linkText",
         "value": "View Offer",
         "label": "Offer CTA Text",
-        "description": "Enter the text for the button.",
-        "required": true,
-        "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
-          "customErrorMsg": "Error occured in Offer button text."
-        }
+        "description": "Text for the offer button.",
+        "required": true
       },
       {
         "component": "select",
@@ -453,18 +387,10 @@
       },
       {
         "component": "reference",
-        "label": "Icon for Button",
-        "name": "offer_linkIcon",
-        "valueType": "string",
-        "condition": { "===": [{"var" : "card_Type"}, "generalOffer"] }
-      },
-      {
-        "component": "reference",
-        "label": "Offer Background Image",
+        "label": "Offer Background Image For Desktop (Default)",
         "name": "offer_BckImg",
         "valueType": "string",
-        "required": true,
-        "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
+        "required": true
       },
 
       {
@@ -473,16 +399,15 @@
         "name": "offer_BckImgAlt",
         "valueType": "string",
         "required": true,
-        "condition": { "!==": [{"var" : "card_Type"}, "generalOffer"] }
+        "condition": { "!==": [{"var" : "offer_BckImg"}, ""] }
       },
 
       {
         "component": "reference",
-        "label": "Offer Mobile Background Image",
+        "label": "Offer Background Image For Mobile",
         "name": "offer_Mobile_BckImg",
         "valueType": "string",
-        "required": true,
-        "condition": { "===": [{"var" : "card_Type"}, "secondaryOffer"] }
+        "required": true
       },
 
       {
@@ -491,7 +416,7 @@
         "name": "offer_Mobile_BckImgAlt",
         "valueType": "string",
         "required": true,
-        "condition": { "===": [{"var" : "card_Type"}, "secondaryOffer"] }
+        "condition": { "!==": [{"var" : "offer_Mobile_BckImg"}, ""] }
       }
     ]
   },
