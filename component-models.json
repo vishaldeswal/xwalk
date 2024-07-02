@@ -428,10 +428,9 @@
         "label": "Simple Text",
         "valueType": "string",
         "description": "This is a text input with validation.",
-        "required": false,
         "validation": {
-          "minLength": 1955,
-          "maxLength": 1985,
+          "minLength": 2,
+          "maxLength": 5,
           "regExp": "^foo:.*",
           "customErrorMsg": "Why don't you make like a tree and get outta here?"
         }
