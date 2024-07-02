@@ -319,7 +319,7 @@
   height: 100%;
 
   @media(min-width: 1024px) {
-      padding: 20px 20px 20px;
+      padding: 32px 32px 32px;
   }
 }
 
@@ -448,11 +448,11 @@
   }
 }
 
-.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title{
+/* .light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title{
   @media(min-width:1024px) {
       font-size: 32px;
   }
-}/*newly added*/
+}newly added */
 
 .light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__description{
   @media(min-width:1024px) {
