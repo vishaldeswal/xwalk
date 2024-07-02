@@ -344,7 +344,7 @@
   left: 32px;
   bottom: 32px; */
   width: 90%;
-  height: 30%;
+  height: auto;
   left: 5%;
   bottom: 5%;
 }
