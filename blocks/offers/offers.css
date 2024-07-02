@@ -592,7 +592,7 @@ h2 {
     clip-path: polygon(0 0, 100% 0, 100% 180px, 210px 180px, 200px 100%, 0 100%);
   }
   
-  .teaser-light{
+  .teaser-dark{
      clip-path: polygon(0 20px, 60px 20px, 70px 0, 100% 0, 100% 100%, 0 100%);;
   }
 }
@@ -614,7 +614,7 @@ h2 {
      clip-path: polygon(0 0, 100% 0, 100% 280px, 420px 280px, 410px 100%, 0 100%);
   }
    
-   .teaser-light{
+   .teaser-dark{
      clip-path: polygon(0 20px, 115px 20px, 125px 0, 100% 0, 100% 100%, 0 100%);
   }
   
@@ -637,7 +637,7 @@ h2 {
     clip-path: polygon(0 0, 100% 0, 100% 380px, 620px 380px, 610px 100%, 0 100%);
   }
 
-  .teaser-light{
+  .teaser-dark{
     clip-path: polygon(0 20px, 205px 20px, 215px 0, 100% 0, 100% 100%, 0 100%);
   }
   
