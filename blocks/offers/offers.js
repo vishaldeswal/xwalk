@@ -1,15 +1,19 @@
 function createOffersHTML(component) {
   let title = component.querySelector('[data-aue-prop="component_title"]');
-  let description = component.querySelector('[data-aue-prop="component_description"]');
+  let description = component.querySelector(
+    '[data-aue-prop="component_description"]'
+  );
   let a = component.querySelector('[data-aue-prop="component_linkText"]');
-  let target=component.querySelector('[data-aue-prop="component_linkTarget"]');
+  let target = component.querySelector(
+    '[data-aue-prop="component_linkTarget"]'
+  );
   let btnIcon = component.querySelector('[data-aue-prop="component_linkIcon"]');
 
   if (a) {
     a.classList.remove("button");
     a.classList.add("btn--link", "btn--link-primary");
-    if(target){
-      a.setAttribute('target', target.innerText);
+    if (target) {
+      a.setAttribute("target", target.innerText);
     }
     a.innerHTML = `${a.innerText} <span>${
       btnIcon ? `${btnIcon.outerHTML}` : ""
@@ -35,26 +39,27 @@ function createPrimaryOffer(teaser) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
-  let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
+  let target = teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
   if (a) {
     a.classList.add("button", "primary__btn");
-    if(target){
-      a.setAttribute('target', target.innerText);
+    if (target) {
+      a.setAttribute("target", target.innerText);
     }
   }
 
-  const leftContainer = document.createElement('div');
-  leftContainer.classList.add('left-container');
+  const leftContainer = document.createElement("div");
+  leftContainer.classList.add("left-container");
 
-  Array.from(teaser.attributes).forEach(attr => {
+  Array.from(teaser.attributes).forEach((attr) => {
     leftContainer.setAttribute(attr.name, attr.value);
-});
+  });
 
-
-leftContainer.innerHTML = `
+  leftContainer.innerHTML = `
    <picture>
-      <source srcset=" ${bckImg ? `${bckImg.src}` : ""}" media="(min-width: 1024px)">
+      <source srcset=" ${
+        bckImg ? `${bckImg.src}` : ""
+      }" media="(min-width: 1024px)">
       ${bckImg ? `${bckImg.outerHTML}` : ""}
    </picture>
    <div class="light-teaser buyers-guide-teaser">
@@ -62,10 +67,10 @@ leftContainer.innerHTML = `
          <div class="teaser__content">
             <div class="teaser__info left-img-over-text">
                <div class="teaser__title">
-                  ${title? `${title.outerHTML}` : ""}
+                  ${title ? `${title.outerHTML}` : ""}
                </div>
                <div class="teaser__description">
-                  ${description? `<p>${description.innerText}</p>`: ""}
+                  ${description ? `<p>${description.innerText}</p>` : ""}
                </div>
             </div>
             <div class="teaser__action-btn">
@@ -76,8 +81,6 @@ leftContainer.innerHTML = `
    </div>
 `;
 
-
-
   return leftContainer.outerHTML;
 }
 
@@ -87,42 +90,47 @@ function createSecondaryOffer(teaser) {
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let bckImg = teaser.querySelector('[data-aue-prop="offer_BckImg"]');
   let bckMobImg = teaser.querySelector('[data-aue-prop="offer_Mobile_BckImg"]');
-  let target =teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
-
+  let target = teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
 
   if (a) {
     a.classList.add("button", "primary__btn");
-    if(target){
-      a.setAttribute('target', target.innerText);
+    if (target) {
+      a.setAttribute("target", target.innerText);
     }
-    
   }
 
-  const secCardContainer = document.createElement('div');
-  secCardContainer.classList.add('right-container__card-1');
+  const secCardContainer = document.createElement("div");
+  secCardContainer.classList.add("right-container__card-1");
 
-  Array.from(teaser.attributes).forEach(attr => {
+  Array.from(teaser.attributes).forEach((attr) => {
     secCardContainer.setAttribute(attr.name, attr.value);
-});
+  });
 
   secCardContainer.innerHTML = `
                         <picture>
-                            <source media="(min-width: 769px)" srcset="${bckImg ? `${bckImg.src}` : ""}" >
-                            <source media="(max-width: 768px)" srcset="${bckMobImg ? `${bckMobImg.src}` : ""}" >
+                            <source media="(min-width: 769px)" srcset="${
+                              bckImg ? `${bckImg.src}` : ""
+                            }" >
+                            <source media="(max-width: 768px)" srcset="${
+                              bckMobImg ? `${bckMobImg.src}` : ""
+                            }" >
                              ${bckImg ? `${bckImg.outerHTML}` : ""}
                               
                         </picture>
                         <div class="right-container__content">
                             <div class="immersive__content img-over-text">
-                                ${title? `<p><strong>${title.innerText}</strong></p>` : ""}
-                                ${description? `<p>${description.innerText}</p>`: ""}
+                                 <div class="teaser__title">
+                  ${title ? `${title.outerHTML}` : ""}
+               </div>
+               <div class="teaser__description">
+                  ${description ? `<p>${description.innerText}</p>` : ""}
+               </div>
                                 <div class="immersive__action">
                                  ${a ? a.outerHTML : ""}
                                  </div>
                             </div>
                         </div>
                     `;
-
 
   return secCardContainer.outerHTML;
 }
@@ -132,32 +140,42 @@ function createGeneralOffer(teaser, textClass) {
   let description = teaser.querySelector('[data-aue-prop="offer_Description"]');
   let a = teaser.querySelector('[data-aue-prop="offer_linkText"]');
   let btnIcon = teaser.querySelector('[data-aue-prop="component_linkIcon"]');
-  let target=teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
+  let target = teaser.querySelector('[data-aue-prop="offer_linkTarget"]');
   console.log("General Title:", title);
 
   if (a) {
     a.classList.add("button", "primary__btn");
-    if(target){
-      a.setAttribute('target', target.innerText);
+    if (target) {
+      a.setAttribute("target", target.innerText);
     }
   }
 
-  const genCardContainer = document.createElement('div');
-  genCardContainer.classList.add('right-container__card-2');
+  const genCardContainer = document.createElement("div");
+  genCardContainer.classList.add("right-container__card-2");
 
-  Array.from(teaser.attributes).forEach(attr => {
+  Array.from(teaser.attributes).forEach((attr) => {
     genCardContainer.setAttribute(attr.name, attr.value);
   });
 
-  genCardContainer.innerHTML=`<div class="light-teaser buyers-guide-teaser">
-                                <div class="teaser__card ${textClass? textClass: ''}">
+  genCardContainer.innerHTML = `<div class="light-teaser buyers-guide-teaser">
+                                <div class="teaser__card ${
+                                  textClass ? textClass : ""
+                                }">
                                     <div class="teaser__content">
                                         <div class="teaser__info">
                                             <div class="teaser__title">
-                                                 ${title? `${title.outerHTML}` : ""}
+                                                 ${
+                                                   title
+                                                     ? `${title.outerHTML}`
+                                                     : ""
+                                                 }
                                             </div>
                                             <div class="teaser__description">
-                                                 ${description? `<p>${description.innerText}</p>`: ""}
+                                                 ${
+                                                   description
+                                                     ? `<p>${description.innerText}</p>`
+                                                     : ""
+                                                 }
                                             </div>
                                         </div>
                                         <div class="teaser__actions">
@@ -166,10 +184,6 @@ function createGeneralOffer(teaser, textClass) {
                                     </div>
                                 </div>
                             </div>`;
-
-
-
-
 
   return genCardContainer.outerHTML;
 }
@@ -181,16 +195,11 @@ export default function decorate(block) {
   //console.log("Card 1: ", card1.outerHTML);
   // console.log("Card 3: ", card3.outerHTML);
 
-  const componentHTML = component? createOffersHTML(component) : "";
-  const primaryCard = (card1)? createPrimaryOffer(card1): ""; 
-  const secondaryCard= (card2)? createSecondaryOffer(card2): "";
-  const generalCard1= (card3)? createGeneralOffer(card3, 'teaser-light'): "";
-  const generalCard2= (card4)? createGeneralOffer(card4, 'teaser-dark'): "";
- 
-  
-  
- 
-  
+  const componentHTML = component ? createOffersHTML(component) : "";
+  const primaryCard = card1 ? createPrimaryOffer(card1) : "";
+  const secondaryCard = card2 ? createSecondaryOffer(card2) : "";
+  const generalCard1 = card3 ? createGeneralOffer(card3, "teaser-light") : "";
+  const generalCard2 = card4 ? createGeneralOffer(card4, "teaser-dark") : "";
 
   block.innerHTML = `
   <section class="deals-offers-container">
