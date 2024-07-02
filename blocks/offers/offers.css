@@ -448,7 +448,7 @@
   }
 }
 
-.light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title h4{
+/* .light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__title{
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
@@ -460,7 +460,7 @@
   @media(min-width:1024px) {
       font-size: 32px;
   }
-}newly added
+}newly added */
 
 .light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__description{
   margin-top: 16px;
