@@ -521,10 +521,10 @@ h2 {
   align-items: flex-start;
   gap: 10.24px;
   border-bottom: 0.64px solid var(--Primary-Main, #18171a);
-}
+/* } */
 .btn--link-primary {
   color: var(--Primary-Main, #18171a);
 }
-.btn--link img {
+/* .btn--link img {
   height: 16px;
-} */
+}  */
