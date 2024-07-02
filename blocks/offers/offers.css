@@ -107,7 +107,6 @@
     
     line-height: 20px;
     margin-top: 16px;
-    margin-bottom: 24px;
     max-width: 236px;
     display: block;
   
@@ -117,7 +116,6 @@
         font-style: normal;
         font-weight: 300;
         line-height: 24px;
-        margin-bottom: 0;
         max-width: 280px;        
     }
   }
