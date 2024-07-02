@@ -40,6 +40,25 @@
   }
 } /*changes*/
 
+.immersive__wrapper-light .immersive__content h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+  margin: 0;
+  max-width: 300px;
+
+  @media(min-width: 1024px) {
+      margin: 0;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 72px;
+      max-width: 640px;
+      letter-spacing: 1.28px;
+  }
+}
+
 .immersive__wrapper-light .immersive__content .teaser__title {
   font-family: "Kepler Std";
   font-size: 18px;
