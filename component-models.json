@@ -422,20 +422,17 @@
   {
     "id": "testBlock",
     "fields": [
-      {
-        "component": "text",
-        "name": "text",
-        "label": "Simple Text",
-        "valueType": "string",
-        "description": "This is a text input with validation.",
-        "validation": {
-          "minLength": 2,
-          "maxLength": 5,
-          "regExp": "^foo:.*",
-          "customErrorMsg": "Why don't you make like a tree and get outta here?"
-        }
+    {
+      "component": "richtext",
+      "name": "rte",
+      "label": "Rich Text",
+      "valueType": "string",
+      "validation": {
+        "maxSize": 10,
+        "customErrorMsg": "That's about as funny as a screen door on a battleship."
       }
-    ]
+    }
+  ]
   },
   {
     "id": "another simpletext",
