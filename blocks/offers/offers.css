@@ -588,10 +588,6 @@
   .right-container__card-1 {
     width: 100%;
     max-width: 800px; /* Adjust as needed */
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
   }
   
   /* Styles for the picture element */
