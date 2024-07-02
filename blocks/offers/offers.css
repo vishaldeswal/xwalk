@@ -61,7 +61,7 @@
 
 .immersive__wrapper-light .immersive__content p {
   color: var(--Primary-Main, #18171A);
-  /* font-family: "Fira Sans"; */
+  font-family: "Fira Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -378,7 +378,7 @@
   text-underline-offset: 2px;
   padding: 0;
 
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
