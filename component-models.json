@@ -387,7 +387,7 @@
       },
       {
         "component": "reference",
-        "label": "Offer Background Image For Desktop (Default)",
+        "label": "Bck Image Desktop (Default Img)",
         "name": "offer_BckImg",
         "valueType": "string",
         "required": true
@@ -395,7 +395,7 @@
 
       {
         "component": "text",
-        "label": "Offer Background Image Alt",
+        "label": "Background Image Alt",
         "name": "offer_BckImgAlt",
         "valueType": "string",
         "required": true,
@@ -404,10 +404,9 @@
 
       {
         "component": "reference",
-        "label": "Offer Background Image For Mobile",
+        "label": "Bck Image For Mobile",
         "name": "offer_Mobile_BckImg",
-        "valueType": "string",
-        "required": true
+        "valueType": "string"
       },
 
       {
