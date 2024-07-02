@@ -146,12 +146,14 @@
   
   .immersive__wrapper-light .sub-container .immersive__content .immersive__action a {
     display: flex;
-    padding: 8px 12px;
-    background-color: #ffffff;
+    height: 25px;
+    padding: 6px 12px;
     justify-content: center;
     align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    background-color: #ffffff;
     align-self: stretch;
-    border: none;
     font-size: 12px;
     color: #18171A;
     font-style: normal;
@@ -159,7 +161,6 @@
     line-height: 24px;
     border-radius: unset;
     text-decoration: none;
-    margin: 0;
   
     @media(min-width: 1024){
         font-size: 18px;
