@@ -428,7 +428,7 @@
         "label": "Simple Text",
         "valueType": "string",
         "description": "This is a text input with validation.",
-        "required": true,
+        "required": false,
         "validation": {
           "minLength": 1955,
           "maxLength": 1985,
