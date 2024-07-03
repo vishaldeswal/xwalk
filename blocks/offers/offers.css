@@ -670,7 +670,7 @@
       }
 
       .teaser__card.teaser-dark{
-        clip-path: polygon(0 15px, 60px 15px, 70px 0, 100% 0, 100% 100%, 0 100%);;
+        clip-path: polygon(0 15px, 55px 15px, 65px 0, 100% 0, 100% 100%, 0 100%);;
      } 
      .teaser__card.teaser-light{
      clip-path: polygon(0 15px, 32% 15px, 48% 15px, 100% 15px, 100% 100%, 0 100%);
