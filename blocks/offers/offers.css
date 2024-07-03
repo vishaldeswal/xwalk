@@ -677,12 +677,16 @@
      }
   }
   
-  @media (min-width: 1025px) {
+  @media (min-width: 1024px) {
     .right-container,
     .right-container__card-1,
     .right-container-subcontainer {
       width: 620px;
 
+    }
+
+    .left-container{
+      min-width: 420px;
     }
 
     .image-container {
