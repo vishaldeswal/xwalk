@@ -198,19 +198,28 @@
   .immersive__wrapper-light .sub-container {
     order: 2;
     display: flex;
+    justify-content: space-between;
   }
-  
+  /*-------------------------MY CHANGES-------------------------------------*/
   @media (min-width: 1024px) {
     .immersive__wrapper-light .sub-container {
-        order: 2;
+        /* order: 2;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; */
         gap: 24px;
         margin-top: 48px;
     }
   } /*changes*/
+
+  .left-container {
+    flex-grow: 1;
+  }
   
+  .right-container {
+    width: 300px; /* Adjust this value to your desired fixed width */
+  }
   
+  /*------------------------------------------------------------------*/
   .immersive__wrapper-light .sub-container .left-container {
     display: none;
   
