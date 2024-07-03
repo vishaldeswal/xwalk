@@ -294,9 +294,9 @@
   }/*changes*/
   
   .img-over-text{
-    @media (min-width: 1023px){
+    /* @media (min-width: 1023px){
         padding: 32px 0 0 16px;
-    }
+    } */
     
   }
   
