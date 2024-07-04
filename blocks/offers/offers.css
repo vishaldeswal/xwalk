@@ -1,10 +1,11 @@
 
 /* -----------------------STYLE.CSS----------------------------------------------------------- */
 .deals-offers-container {
-  padding: 0px 20px 20px 20px; /*changes*/
+  padding: 20px 20px 20px 20px; /*changes*/
   @media (max-width: 1023px) {
       display: flex;
       justify-content: center;
+      padding: 10px 10px 10px 10px;
   }
 }
 
