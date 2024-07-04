@@ -5,7 +5,7 @@
   @media (max-width: 1023px) {
       display: flex;
       justify-content: center;
-      padding: 10px 10px 10px 10px;
+      padding: 10px;
   }
 }
 
@@ -645,7 +645,7 @@ h2 {
   .right-container,
   .right-container__card-1,
   .right-container-subcontainer {
-    width: 330px;
+    width: 320px;
     margin: 0 auto;
   }
 
@@ -674,7 +674,7 @@ h2 {
   .right-container,
   .right-container__card-1,
   .right-container-subcontainer {
-    width: 750px;
+    width: 650px;
   }
 
   .image-container {
