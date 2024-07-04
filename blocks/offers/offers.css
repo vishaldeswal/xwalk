@@ -659,7 +659,7 @@ h2 {
 
   .image-container img {
       height: 100%;
-      clip-path: polygon(0 0, 100% 0, 100% 165px, 190px 165px, 180px 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 165px, 195px 165px, 185px 100%, 0 100%);
     }
 
     .teaser__card.teaser-dark{
@@ -685,12 +685,12 @@ h2 {
   }
 
   .image-container {
-      max-height: 180px;
+      max-height: 200px;
     }
 
   .image-container img {
       height: 100%;
-      clip-path: polygon(0 0, 100% 0, 100% 165px, 190px 165px, 180px 100%, 0 100%);
+      clip-path:  polygon(0 0, 100% 0, 100% 185px, 235px 185px, 225px 100%, 0 100%);
     }
 
     .teaser__card.teaser-dark{
@@ -714,11 +714,11 @@ h2 {
 
   .image-container img {
       height: 100%;
-      clip-path: polygon(0 0, 100% 0, 100% 285px, 450px 285px, 440px 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 255px, 420px 255px, 410px 100%, 0 100%);
     }
 
     .teaser__card.teaser-dark{
-      clip-path: polygon(0 15px, 70px 15px, 80px 0, 100% 0, 100% 100%, 0 100%);;
+      clip-path: polygon(0 15px, 90px 15px, 100px 0, 100% 0, 100% 100%, 0 100%);
    } 
    .teaser__card.teaser-light{
    clip-path: polygon(0 15px, 32% 15px, 48% 15px, 100% 15px, 100% 100%, 0 100%);
