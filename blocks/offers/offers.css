@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 48px;
+    align-items: center;
   
     @media(min-width: 1023px) {
         display: inherit;
@@ -37,6 +38,7 @@
         display: flex;
         align-items: flex-end;
         text-align: left;
+        justify-content: space-between; 
     }
   } /*changes*/
   
@@ -178,10 +180,10 @@
     top: 100%;
   
     @media (min-width:1023px) {
-        position: absolute;
-        right: 0;
+        position: relative;
+        /* right: 0;
         top: auto;
-        left: auto;
+        left: auto; */
     }
   }    /*changes*/
   
