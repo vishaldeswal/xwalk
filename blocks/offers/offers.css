@@ -40,7 +40,7 @@
 
     @media(min-width: 1023px) {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;
       text-align: left;
     }
   } /*changes*/
