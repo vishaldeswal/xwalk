@@ -25,6 +25,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
   
   
     @media(min-width: 1023px) {
@@ -179,10 +180,10 @@
     top: 100%;
   
     @media (min-width:1023px) {
-        position: relative;
-        /* right: 0;
+        position: absolute;
+        right: 0;
         top: auto;
-        left: auto; */
+        left: auto;
     }
   }    /*changes*/
   
