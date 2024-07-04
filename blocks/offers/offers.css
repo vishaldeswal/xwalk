@@ -35,15 +35,13 @@
     } 
   }
   .heading-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
 
 
     @media(min-width: 1023px) {
-        flex-direction: row;
-        align-items: flex-end;
-        text-align: left;
+      display: flex;
+      align-items: flex-start;
+      text-align: left;
     }
   } /*changes*/
   
