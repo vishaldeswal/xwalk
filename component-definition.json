@@ -138,7 +138,7 @@
         },
         {
           "title": "Offer List",
-          "id": "offers-list",
+          "id": "offer-list",
           "plugins": {
             "xwalk": {
               "page": {
