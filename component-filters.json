@@ -40,9 +40,9 @@
     ]
   },
   {
-    "id": "offers",
+    "id": "offer-list",
     "components": [
-      "offer-component"
+      "offer-item"
     ]
   }
 ]
