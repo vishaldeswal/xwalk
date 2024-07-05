@@ -40,19 +40,19 @@ export default function decorate(block) {
 `;
 
 
-block.innerHTML = `
-  <section class="deals-offers-container">
-        <div class="immersive__wrapper-light">
-            ${componentHTML}
-            <div class="sub-container">
-                ${primaryCard}
-                <div class="right-container">
-                    ${secondaryCard}
-                </div>
-            </div>
-        </div>              
-    </section>
-  `;
+// block.innerHTML = `
+//   <section class="deals-offers-container">
+//         <div class="immersive__wrapper-light">
+//             ${componentHTML}
+//             <div class="sub-container">
+//                 ${primaryCard}
+//                 <div class="right-container">
+//                     ${secondaryCard}
+//                 </div>
+//             </div>
+//         </div>              
+//     </section>
+//   `;
 
  
 }
