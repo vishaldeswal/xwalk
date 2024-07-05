@@ -15,6 +15,8 @@ export default function decorate(block) {
 
     const primaryCard= createPrimaryOffer(offerItems[0]);
     const secondaryCard= createSecondaryOffer(offerItems[1]);
+    const generalCard1= (offerItems[2])? createGeneralOffer(offerItems[2], 'teaser-light'): "";
+    const generalCard2= (offerItems[3])? createGeneralOffer(offerItems[3], 'teaser-dark'): "";
 
     if (a) {
       a.classList.remove("button");
@@ -29,8 +31,7 @@ export default function decorate(block) {
     }
     
 
-    const componentHTML = `
-  <div class="immersive__content heading-content">
+    const componentHTML = `<div class="immersive__content heading-content">
   ${(title && type )? `<${type}>${title}</${type}>` : ""}
   ${description ? `<p>${description}</p>` : ""}
       <div class="immersive__action-btn">
@@ -40,19 +41,23 @@ export default function decorate(block) {
 `;
 
 
-// block.innerHTML = `
-//   <section class="deals-offers-container">
-//         <div class="immersive__wrapper-light">
-//             ${componentHTML}
-//             <div class="sub-container">
-//                 ${primaryCard}
-//                 <div class="right-container">
-//                     ${secondaryCard}
-//                 </div>
-//             </div>
-//         </div>              
-//     </section>
-//   `;
+block.innerHTML = `
+<section class="deals-offers-container">
+      <div class="immersive__wrapper-light">
+          ${componentHTML}
+          <div class="sub-container">
+              ${primaryCard}
+              <div class="right-container">
+                  ${secondaryCard}
+                  <div class="right-container-subcontainer ">
+                      ${generalCard1}
+                      ${generalCard2}
+                  </div>
+              </div>
+          </div>
+      </div>              
+  </section>
+`;
 
  
 }
@@ -160,7 +165,7 @@ function createSecondaryOffer(card) {
   if (a) {
     a.classList.add("button", "primary__btn");
     if(target){
-      a.setAttribute('target', target.innerText);
+      a.setAttribute('target', target);
     }
     
   }
@@ -193,4 +198,55 @@ function createSecondaryOffer(card) {
 
 
   return secCardContainer.outerHTML;
+}
+
+function createGeneralOffer(card, textClass) {
+  
+  const [desktopImgEl, mobileImageEl, titleEl, descriptionEl, ctaEl, ctaTargetEL  ] = card.children;
+
+  const title = titleEl?.innerText?.trim() || '';
+  const description = descriptionEl?.innerText?.trim() || '';
+  
+  const a = ctaEl?.querySelector('.button-container a') || '';
+  const target = ctaTargetEL?.innerText?.trim() || '';
+  
+  
+
+  if (a) {
+    a.classList.add("button", "primary__btn");
+    if(target){
+      a.setAttribute('target', target);
+    }
+  }
+
+  const genCardContainer = document.createElement('div');
+  genCardContainer.classList.add('right-container__card-2');
+
+  Array.from(card.attributes).forEach(attr => {
+    genCardContainer.setAttribute(attr.name, attr.value);
+  });
+
+  genCardContainer.innerHTML=`<div class="light-teaser buyers-guide-teaser">
+                                <div class="teaser__card ${textClass? textClass: ''}">
+                                    <div class="teaser__content">
+                                        <div class="teaser__info">
+                                            <div class="teaser__title">
+                                                 ${title? `<p>${title}</p>` : ""}
+                                            </div>
+                                            <div class="teaser__description">
+                                                 ${description? `<p>${description}</p>`: ""}
+                                            </div>
+                                        </div>
+                                        <div class="teaser__actions">
+                                          ${a ? a.outerHTML : ""}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>`;
+
+
+
+
+
+  return genCardContainer.outerHTML;
 }
