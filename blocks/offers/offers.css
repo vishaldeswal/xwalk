@@ -1,5 +1,4 @@
 
-/* -----------------------STYLE.CSS----------------------------------------------------------- */
 .deals-offers-container {
   padding: 20px 20px 20px 20px; /*changes*/
   @media (max-width: 1023px) {
@@ -20,7 +19,7 @@
 
   @media(min-width: 1023px) {
       display: inherit;
-      text-align: center;  /*changes*/
+      text-align: center;  
   }
 }
 
@@ -48,7 +47,7 @@
     align-items: flex-end;
     text-align: left;
   }
-} /*changes*/
+} 
 
 .immersive__wrapper-light .immersive__content h2 {
   font-size: 32px;
@@ -56,7 +55,7 @@
   line-height: 40px;
   letter-spacing: 0.64px;
   margin: 0;
-  /* width:100%; */
+ 
 
   @media(min-width: 1023px) {
       margin: 0;
@@ -94,7 +93,6 @@
   line-height: 20px;
   margin-top: 48px;
   margin-bottom: 48px;
-  /* width:100% ; */
   display: block;
 
   @media(min-width:1023px) {
@@ -199,7 +197,7 @@
       top: auto;
       left: auto;
   }
-}    /*changes*/
+}   
 
 .immersive__wrapper-light .immersive__action {
   display: inline-flex;
@@ -216,7 +214,7 @@
   display: flex;
   justify-content: space-between;
 }
-/*-------------------------MY CHANGES-------------------------------------*/
+
 @media (min-width: 1023px) {
   .immersive__wrapper-light .sub-container {
       /* order: 2;
@@ -225,17 +223,17 @@
       gap: 24px;
       margin-top: 48px;
   }
-} /*changes*/
+} 
 
 .left-container {
   flex-grow: 1;
 }
 
 .right-container {
-  width: 300px; /* Adjust this value to your desired fixed width */
+  width: 300px; 
 }
 
-/*------------------------------------------------------------------*/
+
 .immersive__wrapper-light .sub-container .left-container {
   display: none;
 
@@ -244,14 +242,6 @@
       position: relative;
   }
 }
-/* MY CHANGES */
-/* .immersive__wrapper-light .sub-container .left-container img {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  gap: 20px;
-} */
 
 .immersive__wrapper-light .sub-container .left-container img,
 .immersive__wrapper-light .sub-container .left-container picture {
@@ -271,7 +261,7 @@
   position: absolute;
   right: 0;
   bottom: 5%;
-} /*newly added*/
+} 
 
 .immersive__wrapper-light .sub-container .left-container .teaser__action-btn a{
       display: flex;
@@ -293,7 +283,7 @@
           padding: 8px 18px 8px 20px;
           margin: 0;
       }
-}/*newly added*/
+}
 
 .immersive__wrapper-light .sub-container .right-container {
   position: relative;
@@ -301,20 +291,12 @@
 }
 
 .immersive__wrapper-light .sub-container .right-container .right-container-subcontainer {
-  /* display: flex;
-  align-items: flex-end; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  width: 100%; /*check*/
-}/*changes*/
-
-.img-over-text{
-  /* @media (min-width: 1023px){
-      padding: 32px 0 0 16px;
-  } */
-  
+  width: 100%; 
 }
+
 
 .immersive__wrapper-light .sub-container .right-container .right-container__content {
   position: absolute;
@@ -351,9 +333,8 @@
   height: 96%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   z-index: 1; 
-  /* Ensure the gradient is above the image */
-  pointer-events: none; /* Ensure the gradient doesn't block interactions */
-} /*newly added */
+  pointer-events: none;
+}
 
 .immersive__wrapper-light .sub-container .right-container .right-container__card-1{
   position: relative;
@@ -388,23 +369,17 @@
 .light-teaser.buyers-guide-teaser .teaser__card.teaser-grey{
   background: var(--Gradients-Gradient-4---60, linear-gradient(238deg, rgba(56, 79, 110, 0.60) -11.12%, rgba(91, 91, 91, 0.60) 111.5%));
   color: white;
-  /* clip-path: polygon(0 20px, 32% 20px, 48% 20px, 100% 20px, 100% 100%, 0 100%); */
 }
-/* MY CHANGES*/
+
 .sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
   position: absolute;
   z-index: 1;
-  /* width: 544px;
-  height: 172px;
-  left: 32px;
-  bottom: 32px; */
   width: 90%;
   height: auto;
   left: 5%;
   bottom: 5%;
 }
 
-/*MY CHANGES*/
 .right-container__card-2 .light-teaser .buyers-guide-teaser .teaser__card{
   height: 100%;
 }
@@ -513,7 +488,7 @@
       font-size: 32px;
       padding: 8px 0px 16px 0px;
   }
- }/* newly added */
+ }
 
 .light-teaser.buyers-guide-teaser .teaser__info.left-img-over-text .teaser__description{
   margin-top: 16px;
@@ -527,56 +502,9 @@
       line-height: 24px;
       width: 67%;
   }
-}/*newly added */
-
-
-/*--------------------------------NEXA STYLE-----------------------------------------*/
-/* p {
-  font-family: "Fira Sans", sans-serif;
-  margin: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-h2 {
-  font-family: "Kepler Std";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
-  letter-spacing: 0.64px;
-}
-.text-color-primary {
-  color: var(--Primary-Main, #18171a);
-}
-.text-color-tertiary {
-  color: var(--Tertiary-White, #fff);
 }
 
-.btn {
-  display: flex;
-  height: 32px;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  text-decoration: none;
-}
-.btn--primary-solid {
-  background: var(--Primary-Main, #18171a);
-  color: var(--Tertiary-White, #fff);
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-}*/
+
  .btn--link {
   font-family: "Fira Sans", sans-serif;
   font-size: 12px;
@@ -600,7 +528,6 @@ h2 {
   height: 16px;
 } 
 
-/*----------CHAT GPT CODE______________*/
 /* General styles for the right container */
 .right-container {
   display: flex;
