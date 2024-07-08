@@ -307,16 +307,6 @@
         "name": "mobileImage",
         "valueType": "string"
       },
-
-      {
-        "component": "text",
-        "label": "Mobile Image Alt",
-        "name": "mobileImageAlt",
-        "valueType": "string",
-        "required": true,
-        "condition": { "!==": [{"var" : "mobileImage"}, ""] }
-      }
-      ,
       {
         "component": "text-input",
         "valueType": "string",
