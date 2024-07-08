@@ -187,7 +187,8 @@
   margin-top: 24px;
 
   @media (min-width: 1023px) {
-      position: absolute;        
+      position: absolute;
+      margin-top: 0;        
   }
 }
 
@@ -207,13 +208,13 @@
   }
 } 
 
-.left-container {
+.offerList__wrapper-light .sub-container .left-container{
   flex-grow: 1;
 }
 
-.right-container {
+/* .right-container {
   width: 300px; 
-}
+} */
 
 
 .offerList__wrapper-light .sub-container .left-container {
@@ -353,7 +354,7 @@
   color: white;
 }
 
-.sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
+.offerList__wrapper-light .sub-container .left-container .light-teaser.buyers-guide-teaser .teaser__card{
   position: absolute;
   z-index: 1;
   width: 90%;
@@ -644,7 +645,7 @@
   }
 
   .left-container{
-    min-width: 420px;
+    min-width: 350px;
   }
 
   .image-container {
