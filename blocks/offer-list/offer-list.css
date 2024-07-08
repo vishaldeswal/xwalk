@@ -8,7 +8,7 @@
   }
 }
 
-.immersive__wrapper-light {
+.offerList__wrapper-light {
   color: #18171A;
   background-color: white;
   position: relative;
@@ -23,7 +23,7 @@
   }
 }
 
-.immersive__wrapper-light .immersive__content {
+.offerList__wrapper-light .offerList__content {
   order: 1;
   top: 0;
   left: 0;
@@ -38,10 +38,9 @@
       text-align: left;
   } 
 }
-.heading-content{
 
 
-
+.offerList__content.heading-content{
   @media(min-width: 1023px) {
     display: flex;
     align-items: flex-end;
@@ -49,7 +48,7 @@
   }
 } 
 
-.immersive__wrapper-light .immersive__content h2 {
+.offerList__wrapper-light .offerList__content h2 {
   font-size: 32px;
   font-weight: 600;
   line-height: 40px;
@@ -68,23 +67,23 @@
   }
 }
 
-.immersive__wrapper-light .immersive__content .teaser__title {
+.right-container__content .offerList__content.img-over-text .teaser__title p{
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
   line-height: 22px;
   letter-spacing: 0.36px;
-  margin: 0;
+  margin: 18px 0;
   
 
   @media(min-width: 1023px) {
       font-size: 32px;
-      margin: 0;
+      margin: 32px 0;
   }
 }
 
-.immersive__wrapper-light .immersive__content p {
+.offerList__wrapper-light .offerList__content p {
   color: var(--Primary-Main, #18171A);
   font-family: "Fira Sans";
   font-size: 12px;
@@ -106,7 +105,7 @@
   }
 }
 
-.immersive__wrapper-light .sub-container .immersive__content p {
+.offerList__wrapper-light .sub-container .offerList__content p {
   color: inherit;
   font-family: "Fira Sans";
   font-size: 12px;
@@ -129,29 +128,12 @@
   }
 }
 
-.immersive__wrapper .immersive__content p strong {
-  margin: 0;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 32px;
-  display: block;
-
-  @media (min-width:1023px) {
-      margin-top: 72px;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 20px;
-  }
- 
-}
-
-.immersive__wrapper .immersive__content .immersive__action {
+.offerList__wrapper .offerList__content .offerList__action {
   margin-top: 18px;
 
 }
 
-.immersive__wrapper-light .sub-container .immersive__content .immersive__action a {
+.offerList__wrapper-light .sub-container .offerList__content .offerList__action a {
   display: flex;
   padding: 6px 12px;
   justify-content: center;
@@ -175,7 +157,7 @@
   
 }
 
-.immersive__wrapper-light .immersive__action-btn {
+.offerList__wrapper-light .offerList__action-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,7 +181,7 @@
   }
 }   
 
-.immersive__wrapper-light .immersive__action {
+.offerList__wrapper-light .offerList__action {
   display: inline-flex;
   align-items: center;
   margin-top: 24px;
@@ -209,14 +191,14 @@
   }
 }
 
-.immersive__wrapper-light .sub-container {
+.offerList__wrapper-light .sub-container {
   order: 2;
   display: flex;
   justify-content: space-between;
 }
 
 @media (min-width: 1023px) {
-  .immersive__wrapper-light .sub-container {
+  .offerList__wrapper-light .sub-container {
       /* order: 2;
       display: grid;
       grid-template-columns: 1fr 1fr; */
@@ -234,7 +216,7 @@
 }
 
 
-.immersive__wrapper-light .sub-container .left-container {
+.offerList__wrapper-light .sub-container .left-container {
   display: none;
 
   @media(min-width: 1023px) {
@@ -243,8 +225,8 @@
   }
 }
 
-.immersive__wrapper-light .sub-container .left-container img,
-.immersive__wrapper-light .sub-container .left-container picture {
+.offerList__wrapper-light .sub-container .left-container img,
+.offerList__wrapper-light .sub-container .left-container picture {
   position: absolute;
   top: 0;
   left: 0;
@@ -253,17 +235,17 @@
   object-fit: cover;
 }
 
-.immersive__wrapper-light .sub-container .left-container .teaser__description{
+.offerList__wrapper-light .sub-container .left-container .teaser__description{
   font-size: 12px;
 }
 
-.immersive__wrapper-light .sub-container .left-container .teaser__action-btn{
+.offerList__wrapper-light .sub-container .left-container .teaser__action-btn{
   position: absolute;
   right: 0;
   bottom: 5%;
 } 
 
-.immersive__wrapper-light .sub-container .left-container .teaser__action-btn a{
+.offerList__wrapper-light .sub-container .left-container .teaser__action-btn a{
       display: flex;
       padding: 8px 12px;
       background-color: #ffffff;
@@ -285,12 +267,12 @@
       }
 }
 
-.immersive__wrapper-light .sub-container .right-container {
+.offerList__wrapper-light .sub-container .right-container {
   position: relative;
   display: block;
 }
 
-.immersive__wrapper-light .sub-container .right-container .right-container-subcontainer {
+.offerList__wrapper-light .sub-container .right-container .right-container-subcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -298,7 +280,7 @@
 }
 
 
-.immersive__wrapper-light .sub-container .right-container .right-container__content {
+.offerList__wrapper-light .sub-container .right-container .right-container__content {
   position: absolute;
   left: 5%;
   top: 2px;
@@ -309,7 +291,7 @@
 
 
 
-.immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture{
+.offerList__wrapper-light .sub-container .right-container .right-container__card-1 picture{
   width: 100%;
   height: auto;
   display: flex;
@@ -317,14 +299,14 @@
 
 }
 
-.immersive__wrapper-light .sub-container .right-container .right-container__card-1 img {
+.offerList__wrapper-light .sub-container .right-container .right-container__card-1 img {
   width: 100%;
   max-width: 100%;
   height: auto;
   
 }
 
-.immersive__wrapper-light .sub-container .right-container .right-container__card-1 picture::before {
+.offerList__wrapper-light .sub-container .right-container .right-container__card-1 picture::before {
   content: "";
   position: absolute;
   top: 0;
@@ -336,7 +318,7 @@
   pointer-events: none;
 }
 
-.immersive__wrapper-light .sub-container .right-container .right-container__card-1{
+.offerList__wrapper-light .sub-container .right-container .right-container__card-1{
   position: relative;
 }
 
@@ -443,7 +425,8 @@
 }
 
 
-.light-teaser.buyers-guide-teaser .teaser__info .teaser__title {
+.light-teaser.buyers-guide-teaser .teaser__info .teaser__title
+ {
   font-family: "Kepler Std";
   font-size: 18px;
   font-style: normal;
@@ -562,7 +545,7 @@
 }
 
 /* Styles for the teaser title within the first card */
-.right-container__card-1 .teaser__title h3 {
+.right-container__card-1 .teaser__title p{
   margin-bottom: 10px;
   font-size: 1.5em;
 }
