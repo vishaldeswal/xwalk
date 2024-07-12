@@ -463,6 +463,13 @@
         "valueType": "string",
         "required": true,
         "condition": { "!==": [{ "var": "image" }, ""] }
+      },
+
+      {
+        "component": "ricktext",
+        "label":"Hotspots Point",
+        "name": "points",
+        "raw": "json of points [ [x1,y1], [x2, y2] ]"
       }
      
     ]
