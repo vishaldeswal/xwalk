@@ -466,10 +466,10 @@
       },
 
       {
-        "component": "ricktext",
-        "label":"Hotspots Point",
+        "component": "text",
+        "label": "Points",
         "name": "points",
-        "raw": "[ [x1,y1], [x2, y2] ]"
+        "valueType": "raw"
       }
      
     ]
