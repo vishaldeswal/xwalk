@@ -469,7 +469,7 @@
         "component": "ricktext",
         "label":"Hotspots Point",
         "name": "points",
-        "raw": "json of points [ [x1,y1], [x2, y2] ]"
+        "raw": "[ [x1,y1], [x2, y2] ]"
       }
      
     ]
