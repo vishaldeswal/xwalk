@@ -391,5 +391,81 @@
        }
      }
     ]
+  } ,
+   {
+    "id": "safety-item",
+    "fields": [
+      {
+        "component": "text-input",
+        "name": "title",
+        "value": "",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "titleType",
+        "value": "h2",
+        "label": "Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "h1",
+            "value": "h1"
+          },
+          {
+            "name": "h2",
+            "value": "h2"
+          },
+          {
+            "name": "h3",
+            "value": "h3"
+          },
+          {
+            "name": "h4",
+            "value": "h4"
+          },
+          {
+            "name": "h5",
+            "value": "h5"
+          },
+          {
+            "name": "h6",
+            "value": "h6"
+          }
+        ]
+      },
+      {
+        "component": "text-input",
+        "name": "subtitle",
+        "value": "",
+        "label": "SubTitle",
+        "valueType": "string"
+      },
+      {
+        "component": "text-input",
+        "name": "tabname",
+        "value": "",
+        "label": "Tab Name",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "label": "Image Alt",
+        "name": "imageAlt",
+        "valueType": "string",
+        "required": true,
+        "condition": { "!==": [{ "var": "image" }, ""] }
+      }
+     
+    ]
   }
+
 ]
