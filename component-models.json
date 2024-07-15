@@ -362,7 +362,7 @@
       {
         "component": "aem-content",
         "name": "reference",
-        "value": "",
+        "value": "/content/dam/vishal_eds/",
         "label": "AEM Content Picker",
         "valueType": "string"
       }
