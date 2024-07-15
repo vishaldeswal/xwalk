@@ -360,10 +360,9 @@
     "id": "testBlock",
     "fields": [
       {
-        "component": "aem-content",
-        "name": "reference",
-        "value": "/content/dam/vishal_eds/",
-        "label": "AEM Content Picker",
+        "component": "aem-tag",
+        "label": "AEM Tag Picker",
+        "name": "cq:tags",
         "valueType": "string"
       }
      ]
